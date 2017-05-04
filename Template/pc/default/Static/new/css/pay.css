@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.pay {
+	width: 100%;
+}
+.payCenter {
+	width: 60%;
+	margin: 0 auto;
+	border:1px solid red;
+}
+.payCenter_head {
+	font-size: 18px;
+	position: relative;
+	border-bottom: 1px solid #aaaaaa;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.payCenter_head p  {
+		width: 80px;
+		height: 40px; 
+		
+}
+.payCenter_head p img {
+	width: 100%;
+	height: 40px;
+}
+.payCenter_head p span {
+	position: absolute;
+	bottom: 10px;
+	left: 70px;
+}
+.payCenter_head div {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+.payCenter_head div span {
+	color: red;
+}
+.payCenter_top {
+	font-size: 20px;
+}
+.payCenter_top img {
+	width: 24px;
+	margin-left: 40px;
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+.payCenter_top_a {
+	font-size: 16px;
+	padding-left: 74px;
+	margin-top: 20px;
+	position: relative;
+	width: 80%;
+}
+.payCenter_top_a a {
+	color: #2f9dd6;
+	text-decoration: none;
+}
+.payCenter_top_a span {
+	color: red;
+	font-size: 20px;
+}
+.payCenter_top_a p {
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+.payCenter_top_b{
+	background-color: #fffaf3;
+	border:1px solid #f8dcb4;
+	font-size: 16px;
+	width: 82%;
+	margin-left: 40px;
+	margin-top: 20px;
+	line-height: 30px;
+	padding-left: 3%;
+}
+.payCenter_top_c {
+	width: 85%;
+	height: 5px;
+	border-radius: 5px;
+	background-color: #d4d4d4;
+	margin-left: 30px;
+	padding:0 10px;
+	margin-top: 10px;
+}
+li { 
+	list-style:none; 
+	float:left;
+}
+.main{ 
+	width:100%; 
+	position:relative;
+	margin-top: 20px;
+}
+.nave {
+	width: 90%;
+	overflow: hidden;
+	margin-left: 40px;
+	position: relative;
+}
+.nave div {
+	width: 90%;
+	height: 1px;
+	background-color: #cbcaca;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+.nave li{ 
+	width:120px; 
+	height:40px; 
+	border:1px solid #cbcaca; 
+	cursor:pointer;
+	text-align: center;
+	line-height: 40px;
+	border-bottom:1px solid #fff;
+	margin-right: 20px;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f6f6f6;
+
+}
+.nave .cur {
+	background-color: #fff;
+
+}
+.content {
+	width: 90%;
+	margin-left: 40px;
+	overflow: hidden;
+}
+.content li{ 
+	width:90%; 
+	/*border:1px solid #000;*/
+	position:absolute;
+	top:60px; 
+	left:60px;
+	padding-bottom: 30px;
+ }
+ .content li .shibie {
+ 	width: 50%;
+ 	height: 30px;
+ 	position: relative;
+ }
+ .content li .shibie input {
+  	width: 380px;
+  	height: 30px;
+  	font-size: 18px;
+  }
+.content li .shibie input:last-child {
+	width: 70px;
+	height: 34px;
+	position: absolute;
+	top:0;
+	left: 380px;
+}
+.content li .band {
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #edeeee;
+}
+.content li .band .band_sort {
+	width: 100%;
+}
+.content li .band .band_sort div{
+	width: 20%;
+	float: left;
+	margin-right: 2%;
+	margin-top: 10px;
+	height: 62px;
+}
+.content li .band .band_sort div:last-child{
+	width: 20%;
+	height: 60px;
+	border:1px dashed #d3d2d2;
+	font-size: 20px;
+	text-align: center;
+	line-height: 64px;
+	text-decoration: none;
+}
+.content li .band .band_sort div:last-child a {
+	text-decoration: none;
+	color: #000;
+	}
+.content li .band .band_sort div img {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+}
+.content li .band .band_sort div:hover #ka {
+	display: block;
+}
+.content li .band .band_sort div p {
+	width: 100%;
+	display: none;
+	position:relative;
+z-index:99999;
+}
+.content li .band .band_sort div p a{
+	width: 50%;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+}
+.content li .band .band_sort div p a:first-child {
+	background-color: #fb9b79;
+}
+.content li .band .band_sort div p a:last-child {
+	background-color: #6bb2ed;
+}
+button {
+	width: 110px;
+	height: 34px;
+	font-size: 18px;
+	background-color: #d0d0d0;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+
+}
+.clear {
+	clear: both;
+}
+.btn {
+	position: relative;
+}
+.fang {
+	font-size: 14px;
+	color: red;
+	position: absolute;
+	bottom: 8px;
+	left: 120px;
+}
+footer {
+	margin-top: 30px;
+}

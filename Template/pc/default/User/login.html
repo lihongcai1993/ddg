@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$tpshop_config['shop_info_store_title']}</title>
+	<link rel="stylesheet" type="text/css" href="__STATIC__/css/enter.css">
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+	<div class="enter">
+		<div class="head">
+			<div class="head_left">
+
+			<img src="__STATIC__/img/logo2.png" alt="">
+			<img src="__STATIC__/img/duoduo.png" alt="">
+	
+			</div>
+			<div class="head_right"><a href="{:U('Index/index')}"><img src="__STATIC__/img/back.jpg" alt=""></a></div>
+		</div>
+		<div class="center">
+			<div class="center_backdrop">
+				<div class="center_content">
+					<div class="center_login">
+					<form id="f1" action="">
+						<div class="login_title">登录多多狗网上商城</div>
+						<div class="login_text">
+							<div class="login_username">
+								<span>邮箱:</span><input type="text" name="email">
+							</div>
+							<div class="login_postword">
+								<span>密码:</span><input type="password" name="password">
+							</div>
+						</div>
+						<div class="login_remember">
+						<input type="checkbox" name="save" value="1">记住登录状态
+						<a href="">忘记密码了？</a>
+						</div>
+						</form>
+						<button onclick="dologin()">登录</button>
+						
+						<div class="login_Register">
+							<p>还不是多多狗会员？<a href="{:U('User/reg')}">马上注册</a></p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="last">
+			<div class="foot">
+				<ul>
+					<li>
+	
+						<div><img src="__STATIC__/img/zp.jpg" alt=""></div>
+						<div>正品保障</div>
+						<div>全场正品，行货保障</div>
+					</li>
+					<li>
+						<div><img src="__STATIC__/img/zp1.jpg" alt=""></div>
+						<div>新手指南</div>
+						<div>快速登录，无需注册</div>
+					</li>
+					<li>
+						<div><img src="__STATIC__/img/zp2.jpg" alt=""></div>
+						<div>货到付款</div>
+						<div>货到付款，安心便捷</div>
+					</li>
+					<li>
+						<div><img src="__STATIC__/img/zp3.jpg" alt=""></div>
+						<div>维修保障</div>
+						<div>服务保证，全国联保</div>
+					</li>
+					<li>
+						<div><img src="__STATIC__/img/zp4.jpg" alt=""></div>
+						<div>无忧退货</div>
+						<div>无忧退货，7日尊享</div>
+					</li>
+					<li>
+						<div><img src="__STATIC__/img/zp5.jpg" alt=""></div>
+						<div>会员权益</div>
+						<div>会员升级，尊贵特权</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- enter -->
+	<div class="end">经营许可：*ICP12001605-4  @2017多多购</div>
+	
+
+	<script type="text/javascript">
+
+		  function dologin()
+		  {
+		      $.post("{:U('User/do_login')}",$("#f1").serialize(),function(data){
+		      	if(data.status<=0)
+		      	{
+		      		alert(data.msg);
+		      	}
+		      	else
+		      	{
+		      		alert("登录成功");
+		      		location.href="{:U('User/index')}";
+		      	}
+		      });
+		  }
+
+</script>
+</body>
+</html>

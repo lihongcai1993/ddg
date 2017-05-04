@@ -1,0 +1,86 @@
+.about_me_head {
+	width: 100%;
+
+}
+.about_me_head span {
+	margin-left: 10px;
+}
+.about_me_head span:first-child {
+	font-size: 22px;
+	color: #000;
+	border-bottom: 2px solid #f29c9f;
+}
+.about_me_top {
+	background-color: #f9f8f6;
+	border:1px solid #b5b5b5;
+	width: 95%;
+	font-size: 16px;
+	line-height: 32px;
+	margin-top: 20px;
+	padding-left: 5%;
+}
+.about_me_pic {
+	width: 100%;
+	height: 200px;
+}
+.con4{
+     width: 300px;
+     height: auto;
+     overflow: hidden;
+     margin: 20px auto;
+     color: #FFFFFF;
+     position: relative;
+}
+
+.upload_pic{
+     display: block;
+     height: 40px;
+     border-radius: 5px;
+     position: absolute;
+     top:100px;
+     left: 160px;
+}
+#cvs{
+	border: 1px solid #000;
+	margin:20px 0 20px 50px;
+	overflow: hidden;
+}
+.con4 .btn{
+     width: 40%;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background: #f29c9f;
+     display: block;
+     font-size: 16px;
+     border-radius: 5px;
+     margin-left: 50px;
+     margin-top: 0;
+
+}
+.about_me_basic div {
+	float: none;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.about_me_basic div input {
+	height: 20px;
+}
+.about_me_basic div i {
+	width: 26px;
+	display: inline-block;
+}
+.about_me_basic div:nth-child(3) i {
+	width: 16px;
+}
+.about_me_basic div:nth-child(5) input {
+	height: 13px;
+}
+.about_me_basic div:last-child button{
+	width: 110px;
+	background-color: #f29c9f;
+	margin-top: 0;
+	margin-left: 20px;
+	border: none;
+}

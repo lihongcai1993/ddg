@@ -1,0 +1,36 @@
+
+
+
+.book {clear:both;width:98%;padding:4px 0;vertical-align:top;border:solid 1px #eee;margin:8px auto 2px;}
+	.bookmod1 {background:#fff;}	
+	.bookmod2 {background:#fff;}	
+	.booklon {background:#FFFFCC;}	
+
+
+
+	.bookl {width:140px;text-align:center;vertical-align:top;padding:14px 0;height:100%;}	
+		.bookl_t {display:none;}	
+		.booklimg img {display:block;border:solid 4px #494949;margin:0 auto 2px;width:expression(this.width > 110 ? 110: true); max-width:110px;}					/*  Í·Ïñ  */
+		.booklimg span {display:none;font-size:12px;line-height:18px; display:block}	
+		.booklimg b {font-size:12px;line-height:18px;display:block}						
+
+	
+	.bookr {vertical-align:top;}
+		.bb {clear:both;text-align:right;line-height:26px;height:26px;padding-right:10px;}		
+			.bb01 {}																					
+			.bb03 {color:red;}											
+			.bb04 {}													
+			.bb05 {}													
+			.bb06 {}													
+		
+		.bt {clear:both;text-align:right;line-height:22px;color:#666;font-size:12px;height:16px;padding-right:10px;}	
+			.bt span {padding-left:6px;}
+			.bt .bt01 {}	
+			.bt .bt02 {}	
+			.bt .bt03 {}	
+				.bt .bt03 a:link,.bt .bt03 a:visited {color:#00f;text-decoration:underline;}
+				.bt .bt03 a:hover {color:#f00;text-decoration:none;}
+		
+		.be {clear:both;line-height:22px;word-break:break-all;word-wrap:break-word;padding:5px;padding-right:10px;}	
+		
+		

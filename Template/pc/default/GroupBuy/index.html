@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>{$tpshop_config['shop_info_store_title']}</title>
+	
+</head>
+<link rel="stylesheet" href="__STATIC__/css/style.css">
+<link rel="stylesheet" href="__STATIC__/css/tuan.css">
+<link rel="stylesheet" href="__STATIC__/css/swiper.min.css">
+
+<body>
+
+<Include file="Public/header" />
+	<!-- 导航 -->
+<ul class="nav" id="nav">
+		<li class="nav-a"><a href="{:U('Index/index')}">首页</a></li>
+		<li class="nav-a"><a href="{:U('Goods/goodslist')}">多多购物</a></li>
+		<li class="nav-a"><a href="{:U('BBS/bbs')}">我的社区</a></li>
+		<li class="cur nav-a"><a href="{:U('GroupBuy/index')}">活动优惠</a></li>
+		<li class="nav-a"><a href="{:U('Vip/vip')}">会员中心</a></li>
+	</ul>
+		<!-- banner图 -->
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+           <adv  pid = "1" limit="4" item="v">     
+            <div class="swiper-slide"><img src="{$v['ad_code']}" alt="" ></div>
+        </adv>  
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+	<div class="total">
+
+			<div class="group">
+				<h2>团购活动</h2>
+				<ul>
+					
+				</ul>
+				<div class="bgc">
+				<foreach name="row" item="v" key="k">
+
+				<div <?php if($k==0 || $k%3==0){?> class="group-one surper"<?php }else{?> class="group-one"<?php } ?> >
+					<div class="group-two"><a href=""><img src="{$v.guanggao}" alt=""></a></div>
+					<ul>
+					<a href="">
+					<foreach name="v.goods_info" item="vv" key="k">
+					<if condition="$k lt 4">
+						<li><img  style="width:70px;height:70px;" src="{$vv.image_url}" alt=""></li>
+					</if>
+						
+					</foreach>
+					</a>
+					</ul>
+					
+					<div style=" padding: 10px;border:1px solid red ; text-align:center;width:360px !important;">团购价￥{$v.price}</div>
+
+				</div>
+			
+				</foreach>
+				</div>
+				
+			</div>
+			<div class="discount">
+			<h2>限时折扣</h2>
+				<ul>
+					
+				</ul>
+				<div class="bgc kou">
+				<!-- 前台循环展示 -->
+				<volist name="panicbuy" id="pv" offset="0" length='3' key="k">
+				
+					<div class="discount-xian">
+						<div class="discount-a" style="background-color:#fff;">
+						<span>{$pv.title}</span><br>
+							
+							
+							
+
+							<style type="text/css">
+								.t li{
+									font-size: 15px !important;
+								}
+							</style>
+							<ul style="background-color:#000;margin-top:5px;width:100%" id="t{$k}" class="t">
+								
+								<li id="h{$k}" class="time"></li>
+								<li class="time">时</li>
+								<li id="i{$k}" class="time"></li>
+								<li class="time">分</li>
+								<li id="s{$k}" class="time"></li>
+								<li class="time">秒</li>
+							</ul>
+						<br/>
+						<img src="{$pv.guanggao.ad_code}" style="width:100%;height:100%;" alt="">
+						</div>
+						<div class="discount-b">
+							
+							<span style="">{$pv.goods_name}</span><br>
+							<img src="{$pv.goods_info.original_img}" style="width:100%" alt=""> 
+							
+						</div>
+					</div>
+					<script>
+
+						function test{$k} (){
+							// 当前时间
+							var nowTime = new Date().getTime();
+							// 结束时间
+							var endTime = new Date('<?php echo date("Y/m/d H:i:s",$pv['end_time'])?>');
+							// 相差的时间	
+							var t = endTime.getTime() - nowTime;
+
+
+							if(t<=0){
+								msg="<li class='time'>已</li><li class='time'>结</li><li class='time'>束</li>";
+								document.getElementById('t'+{$k}).innerHTML = msg;
+								 return false;
+							}
+							
+
+
+							
+							var h = Math.floor(t/1000/60/60);
+							var i = Math.floor(t/1000/60%60);
+							var s = Math.floor(t/1000%60);
+
+							document.getElementById('h'+{$k}).innerHTML = h;
+							document.getElementById('i'+{$k}).innerHTML = i;
+							document.getElementById('s'+{$k}).innerHTML = s;
+
+							setTimeout(test{$k}, 1000);
+						}
+
+					test{$k}();
+					</script>
+				
+				</volist>
+
+
+				</div>
+				<div class="bgc">
+					<ul class="suit">
+					<volist name="panicbuy" id="pvv" offset="3" length='5' key="key">
+						<li><a href=""><img src="{$pvv.guanggao.ad_code}" alt=""><div class="name">{$pvv.title}</div></a></li>
+					</volist>
+						
+						<li class="last">
+							<volist name="panicbuy" id="pvvv" offset="8" length='6' key="key">
+							<div><a href=""><img src="{$pvvv.guanggao.ad_code}" alt=""><p class="name">{$pvvv.title}</p></a></div>
+							</volist>	
+							
+						</li>
+
+					</ul>
+				</div>
+				</div>
+				<div class="referral">
+							<h2>热卖好货</h2>
+				<ul>
+					<volist name="goodstype" id="gt" offset="0" length="6">
+					<li><a href="javascript:othergoods({$gt.id})">{$gt.name}</a></li>
+					</volist>
+					
+				</ul>
+				<div class="bgc abc">
+					<div class="referral-a">
+						<ul>
+							<volist name="goodstype" id="gt" offset="6">
+							<li><a href="javascript:othergoods({$gt.id})">{$gt.name}</a></li>
+							</volist>
+							
+						</ul>
+						<div class="referral-a1">
+						<p>多多优选</p>
+						<span>专注生活美学</span>	
+						</div>
+						<div class="referral-a2">
+						<adv limit="1" item="v" pid='51320'>
+							<img src="{$v[ad_code]}" alt="">
+						</adv>
+						</div>
+					</div>
+					<div class="referral-b">
+						<ul id="og">
+							<volist name="hotgoods" id="hg" offset="0" length="6" key="k">
+							<li <if condition="$k eq 3 or $k eq 6">class="none"</if> >
+								<a href="">
+									<img src="{$hg.original_img}" alt="">
+									 	<div class="referral-b1">
+											<p>{$hg.goods_name}</p>
+											<span>TOP超值推荐</span>	
+										</div>
+								</a>
+							</li>
+							<if condition="$k eq 3"><div></div></if>
+							</volist>
+
+
+
+
+
+						
+						</ul>
+					</div>
+					<div class="referral-c">
+						<div class="referral-c1">
+							<p>大家都在买</p>
+							<span><a href="javascript:randgoods()"><img src="__STATIC__/img/huan.jpg" alt="">&nbsp换一批</a></span>
+						</div>
+						<ul id="rg">
+							<foreach name="randgoodsarr" item="rga">
+							<li>
+								<a href="">
+									<img src="{$rga.original_img}" alt="">
+									<div class="referral-c2">
+										<p> <span>{$rga.goods_name}</span></p>
+										<div class="referral-c3">￥{$rga.shop_price}</div>
+									</div>
+								</a>
+							</li>
+							</foreach>
+
+
+						<!-- 	<li><a href="">
+									<img src="__STATIC__/img/qaz.jpg" alt="">
+									<div class="referral-c2">
+										<p>多多优选&nbsp <span>德国进口汉高按压式牙膏100ml</span></p>
+										<div class="referral-c3">￥25.00</div>
+									</div>
+								</a></li>
+							<li><a href="">
+									<img src="__STATIC__/img/qaz.jpg" alt="">
+									<div class="referral-c2">
+										<p>多多优选&nbsp <span>德国进口汉高按压式牙膏100ml</span></p>
+										<div class="referral-c3">￥25.00</div>
+									</div>
+								</a></li>
+							<li><a href="">
+									<img src="__STATIC__/img/qaz.jpg" alt="">
+									<div class="referral-c2">
+										<p>多多优选&nbsp <span>德国进口汉高按压式牙膏100ml</span></p>
+										<div class="referral-c3">￥25.00</div>
+									</div>
+								</a></li> -->
+						</ul>
+					</div>
+
+				</div>
+			</div>
+				</div>
+			</div>
+			
+	</div>
+	<footer>
+		<div class="info">
+		<div class="info1">
+		<div><a href="">关于多多购</a></div>
+		<div><a href="">多多购手机端</a></div>
+		<div><a href="">联系我们</a></div>
+		<div><a href="">友情链接</a></div>
+		</div>	
+		<div class="info-a-box">	
+			<ul class="info-a">
+				<li>
+				<ol class="info-b">
+					<li><a href="">新手指南</a></li>
+					<li><a href="">优惠券相关说明</a></li>
+					<li><a href="">代购流程</a></li>
+					<li><a href="">会员与积分</a></li>
+					<li><a href="">代购费用</a></li>
+					<li><a href="">代购订单状态</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">付款方式</a></li>
+					<li><a href="">信用卡付款</a></li>
+					<li><a href="">银行卡付款</a></li>
+					<li><a href="">支付宝付款</a></li>
+					<li><a href="">微信支付</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">配送相关</a></li>
+					<li><a href="">运送区域、方式与运费</a></li>
+					<li><a href="">最新大货物物流状态</a></li>
+					<li><a href="">海关及税项</a></li>
+					<li><a href="">商品保管期限</a></li>
+					<li><a href="">包裹跟踪</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">售后服务/退款</a></li>
+					<li><a href="">无理由退货</a></li>
+					<li><a href="">退换货政策</a></li>
+					<li><a href="">我要投诉</a></li>
+					<li><a href="">退款方式</a></li>
+				</ol>
+				</li>
+			</ul>
+			<div class="phone">
+				<p><img src="__STATIC__/img/phone.jpg" alt="" >024-00010002</p>
+				<div class="time">周一至周日，早8:00至晚18:00</div>
+				<div class="wei"><img src="__STATIC__/img/wei.jpg" alt=""></div>
+			</div>
+	</div>
+			<div class="permit">
+			    经营许可：*ICP12001605-4  @2017多多购
+			</div>
+		</div>
+
+	</footer>
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/swiper.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/vip.js"></script>
+	<script src="__STATIC__/time/laydate.js"></script>
+	<script type="text/javascript">
+		function othergoods(typeid)
+		{
+			$.post("{:U('GroupBuy/showgoodsajax')}",{typeid:typeid},function(data){
+				var str="";
+				$.each(data,function(k,v){
+					str+="<li ";
+					if(k==2 || k==5){ str+="class='none'"; };
+					str+="><a href=''><img src="+v.original_img+" alt=''><div class='referral-b1'><p>"+v.goods_name+"</p><span>TOP超值推荐</span></div></a></li>";
+					if(k==2){ str+="<div></div>";};
+				});
+				$("#og").html(str);
+			});
+		}
+		function randgoods()
+		{
+			$.post("{:U('GroupBuy/shwogoodsrand')}",function(data){
+				var str="";
+				$.each(data,function(k,v){
+
+					str+="<li><a href=''><img src="+v.original_img+" alt=''><div class='referral-c2'><p> <span>"+v.goods_name+"</span></p><div class='referral-c3'>￥"+v.shop_price+"</div></div></a></li>";
+
+
+				});
+				$("#rg").html(str);
+			});
+		}
+
+
+	</script>
+	
+
+</body>
+</html>

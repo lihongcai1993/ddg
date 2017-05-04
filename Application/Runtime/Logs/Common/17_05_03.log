@@ -1,0 +1,6 @@
+[ 2017-05-03T15:17:10+08:00 ] ::1 /Template/pc/default/Static/new/img/img/sys_item_selected.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+ERR: 无法加载模块:Template
+

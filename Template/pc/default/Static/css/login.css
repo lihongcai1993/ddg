@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.rabbit {
+	width: 100%;
+	height: 500px;
+}
+.rabbit_absolved {
+	width: 60%;
+	height: 500px;
+	margin: 0 auto;
+	min-width: 1040px;
+}
+.rabbit_absolved div {
+	float: left;
+}
+.absolved_left {
+	width: 56%;
+	height: 500px;
+}
+.absolved_left img {
+	width: 100%;
+	margin-top: 100px;
+}
+
+.absolved_right {
+	width: 40%;
+	height: 500px;
+	
+}
+.absolved_right input {
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #999;
+}
+.absolved_right div {
+	float: none;
+}
+.absolved_right p{
+	font-size: 40px;
+	color: #999;
+	margin: 20px;
+}
+.absolved_import {
+	width: 100%;
+	height: 190px;
+}
+.absolved_import div {
+	height: 35px;
+	margin-top: 10px;
+}
+.absolved_import span {
+	margin-left: 80px;
+	line-height: 40px;
+}
+.absolved_import input{
+	width:230px;
+	height: 35px;
+	float: right;
+	margin-right: 50px;
+}
+.absolved_verify span {
+	margin-left: 83px;
+	line-height: 40px;
+}
+.absolved_verify input{
+	width: 100px;
+	height: 35px;
+	float: right;
+	margin-right: 180px;
+}
+.absolved_agreement input{
+	margin-left: 170px;
+	
+}
+.absolved_agreement  {
+	font-size: 14px;
+	margin-top: 20px;
+}
+.absolved_agreement a {
+	color: #74addf;
+}
+.absolved_agreement a:hover {
+	color: #2c84d2;
+}
+.absolved_right button {
+	width: 230px;
+	height: 40px;
+	border-radius: 5px;
+	margin-left: 170px;
+	background-color: #ff5500;
+	margin-top: 30px;
+}
+.absolved_right button:hover {
+	background-color: #d64802;
+}

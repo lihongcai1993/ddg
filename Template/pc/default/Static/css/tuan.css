@@ -1,0 +1,369 @@
+.total{
+	width: 60%;
+	margin: 0 auto;
+	min-width: 1200px;
+}
+h2 {
+	font-size: 40px;
+	font-weight:400;
+	color: #000;
+	margin: 5px 0;
+}
+.total ul {
+	width: 60%;
+	overflow: hidden;
+}
+.total ul li {
+	float: left;
+	width: 13.2%;
+	list-style: none;
+	text-align: center;
+	font-size: 20px;
+}
+.total ul li a:hover {
+	color: red;
+}
+.bgc {
+	background-color: #f5f5f5;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 10px;
+	margin-top: 10px;
+	padding-bottom: 10px
+}
+.group-one {
+	width: 32%;
+	float: left;
+	margin-left: 2%;
+
+}
+.surper {
+	margin-left: 0;
+}
+.group-two {
+	width: 100%;
+	border:1px solid #fff;
+}
+.group-two:hover {
+	border:1px solid red;
+}
+.group-two img {
+	width: 100%;
+}
+.group-one ul {
+	margin-top: 10px;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+.group-one ul li {
+	float: left;
+	width: 23%;
+	margin-left: 1.3%;
+	font-size: 14px;
+	border:1px solid #fff;
+}
+.group-one ul li img {
+	width: 100%;
+}
+.group-one ul li:hover {
+	border:1px solid red;
+}
+.kou {
+	padding-bottom: 10px;
+}
+.kou div {
+	float: left;
+}
+.discount-xian {
+	width: 39%;
+	height: 180px;
+	margin-right: 2%;
+}
+.kou .discount-shi {
+	width: 18%;
+	height: 180px;
+}
+.discount-a {
+	width: 45%;
+	height: 180px;
+	background-color: yellow;
+	margin-right: 1%;
+	position: relative;
+}
+.discount-a img {
+	width: 100%;
+	height: 100%;
+}
+.discount-a p {
+	position: absolute;
+	top:20px;
+	left:20px;
+}
+.discount-a div {
+	border:1px solid #000;
+	position: absolute;
+	top:40px;
+	left:20px;
+	font-size: 16px;
+	background-color: #464646;
+	color: #fff;
+	padding: 0 5px;
+}
+.discount-b {
+	width: 54%;
+	height: 180px;
+}
+.discount-b img {
+	width: 100%;
+	height: 100%;
+}
+.discount-b1 {
+	width: 100%;
+	height: 49.5%;
+	margin-bottom: 1%;
+	position: relative;
+}
+.discount-b1 div {
+	border:1px solid #000;
+	position: absolute;
+	top:40px;
+	left:10px;
+	font-size: 16px;
+	background-color: #464646;
+	color: #fff;
+	padding: 0 5px;
+	
+	
+}
+.discount-b2 {
+	width: 100%;
+	height: 49.5%;
+}
+.discount-d {
+	width: 100%;
+	height: 180px;
+}
+.discount-d img {
+	width: 100%;
+	height: 100%;
+}
+.discount .suit  {
+	width: 100%;
+}
+.discount .suit li {
+	width: 14.4%;
+	height: 100%;
+	margin-right: 1.4%;
+	position: relative;
+	border:1px solid #f5f5f5;
+}
+.discount .suit li:hover {
+	border:1px solid red;
+	border-radius: 10px;
+}
+.discount .suit .last {
+	width: 20%;
+	margin-right: 0;
+}
+.discount .suit .last:hover {
+	border:1px solid #f5f5f5;
+}
+.discount .suit img {
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+}
+.name {
+	width: 80%;
+	background-color: #000;
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	color: #fff;
+	font-size: 14px;
+	line-height: 200%;
+	border-radius: 15px;
+	opacity: .7;
+
+}
+.name:hover{
+	opacity: 1;
+}
+.discount .suit .last div {
+	float: left;
+	width: 48%;
+	margin-bottom: 5px;
+	position: relative;
+	border:1px solid #f5f5f5;
+}
+
+.discount .suit .last div img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.discount .suit .last div:nth-child(odd) {
+	margin-right: 2%;
+}
+.discount .suit .last p {
+	position: absolute;
+	bottom: 10px;
+	left: 20%;
+	font-size: 14px;
+	color: #fff;
+}
+.discount .suit .last div:hover{
+	border:1px solid red;
+	border-radius: 10px;
+}
+.abc div {
+	float: left;
+}
+
+.referral-a {
+	width: 22%;
+	height: 300px;
+	background-color: #f4eed6;
+}
+.referral-a ul {
+	width: 100%;
+	padding: 2%;
+}
+.referral-a ul li {
+	width: 26%;
+	font-size: 14px;
+	background-color: #c6c5b0;
+	border:1px solid #ada692;
+	margin: 2.5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.referral-a ul li:hover {
+	border:1px solid #000;
+}
+.referral-a1 {
+	width: 100%;
+	text-align: center;
+	font-size: 26px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.referral-a1 span {
+	font-size: 16px;
+	color: #828073;
+}
+.referral-a2 {
+	width: 100%;
+	text-align: center;
+}
+.referral-b {
+	width: 57%;
+	height: 300px;
+
+}
+.referral-b ul {
+	width: 100%
+}
+.referral-b ul div {
+	width: 100%;
+	height: 10px;
+}
+.referral-b ul li {
+	width: 31.5%;
+	height: 145px;
+	float: left;
+	margin-right: 2%;
+	position: relative;
+	border:1px solid #f5f5f5;
+}
+.referral-b ul li:hover {
+	border:1px solid red;
+}
+.referral-b ul li img {
+	width: 100%;
+	height: 100%;
+}
+.referral-b ul .none {
+	margin-right: 0;
+}
+.referral-b1 {
+	width: 100%;
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+}
+.referral-b1 p {
+	font-size: 20px;
+}
+.referral-b1 span {
+	font-size: 14px;
+	color: #bababa;
+}
+.bgc .referral-c {
+	width: 20%;
+	height: 300px;
+	background-color: #fff;
+	margin-left: 1%;
+}
+.referral-c1 {
+	width: 100%;
+	position: relative;
+	margin: 5% 0;
+}
+.referral-c1 p {
+	font-size: 18px;
+	color: #000;
+}
+.referral-c1 span {
+	position: absolute;
+	top:0;
+	right: 0;
+	width: 40%;
+}
+.referral-c1 span a:hover {
+	color:red;
+}
+.referral-c1 span img {
+	margin-right: 1%;
+}
+.referral-c ul {
+	width: 100%;
+	height: 85%;
+
+}
+.referral-c ul li {
+	width: 99%;
+	height: 24%;
+	margin-bottom: 4px;
+	position: relative;
+	border:1px solid #fff;
+
+}
+.referral-c ul li:hover {
+	border:1px solid red;
+}
+.referral-c ul li img {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+.referral-c2 p{
+	font-size: 16px;
+	position: absolute;
+	left: 35%;
+}
+.referral-c2 p span {
+	font-size: 14px;
+}
+.referral-c3{
+	color: red;
+	position: absolute;
+	bottom: 0;
+	left: 35%;
+	font-size: 16px;
+}

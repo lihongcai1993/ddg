@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$tpshop_config['shop_info_store_title']}</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="__STATIC__/css/style.css">
+<link rel="stylesheet" href="__STATIC__/css/book.css">
+<link rel="stylesheet" href="__STATIC__/css/community.css">
+<link rel="stylesheet" href="__STATIC__/css/video.css">
+<Include file="Public/header" />
+	<!-- 导航 -->
+	<ul class="nav" id="nav">
+		<li class="nav-a"><a href="{:U('Index/index')}">首页</a></li>
+		<li class="nav-a"><a href="{:U('Goods/goodslist')}">多多购物</a></li>
+		<li class="cur nav-a"><a href="{:U('BBS/bbs')}">我的社区</a></li>
+		<li class="nav-a"><a href="{:U('GroupBuy/index')}">活动优惠</a></li>
+		<li class="nav-a"><a href="{:U('Vip/vip')}">会员中心</a></li>
+	</ul>
+		
+		<style type="text/css">
+			.video iframe{
+				height:100%;
+				width:100%;
+			}
+
+		</style>
+		<div class="video">
+			<div class="video_cen">
+			<if condition="$info['link']">
+				{$info.link}
+
+			<else/>
+				<video src="/Public/upload/video/{$info.videoname}" width="100%" height="100%"  controls="controls">
+					
+					</video>
+			</if> 
+			</div>
+		</div>
+		<footer>
+		<div class="info">
+		<div class="info1">
+		<div><a href="">关于多多购</a></div>
+		<div><a href="">多多购手机端</a></div>
+		<div><a href="">联系我们</a></div>
+		<div><a href="">友情链接</a></div>
+		</div>	
+		<div class="info-a-box">	
+			<ul class="info-a">
+				<li>
+				<ol class="info-b">
+					<li><a href="">新手指南</a></li>
+					<li><a href="">优惠券相关说明</a></li>
+					<li><a href="">代购流程</a></li>
+					<li><a href="">会员与积分</a></li>
+					<li><a href="">代购费用</a></li>
+					<li><a href="">代购订单状态</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">付款方式</a></li>
+					<li><a href="">信用卡付款</a></li>
+					<li><a href="">银行卡付款</a></li>
+					<li><a href="">支付宝付款</a></li>
+					<li><a href="">微信支付</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">配送相关</a></li>
+					<li><a href="">运送区域、方式与运费</a></li>
+					<li><a href="">最新大货物物流状态</a></li>
+					<li><a href="">海关及税项</a></li>
+					<li><a href="">商品保管期限</a></li>
+					<li><a href="">包裹跟踪</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">售后服务/退款</a></li>
+					<li><a href="">无理由退货</a></li>
+					<li><a href="">退换货政策</a></li>
+					<li><a href="">我要投诉</a></li>
+					<li><a href="">退款方式</a></li>
+				</ol>
+				</li>
+			</ul>
+			<div class="phone">
+				<p><img src="__STATIC__/img/phone.jpg" alt="" >024-00010002</p>
+				<div class="time">周一至周日，早8:00至晚18:00</div>
+				<div class="wei"><img src="__STATIC__/img/wei.jpg" alt=""></div>
+			</div>
+	</div>
+			<div class="permit">
+			    经营许可：*ICP12001605-4  @2017多多购
+			</div>
+		</div>
+
+	</footer>
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/swiper.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/vip.js"></script>
+</body>
+
+
+
+</html>

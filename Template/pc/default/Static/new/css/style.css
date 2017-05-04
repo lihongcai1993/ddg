@@ -1,0 +1,790 @@
+@charset "utf-8";
+/* 基础样式 */
+
+
+
+@font-face {
+	font-family:'Felix Titling';
+	src:url('../fonts/Felix-Titling.woff') format('woff');
+}
+
+@font-face {
+	font-family:'CormorantGaramond-Medium';
+	src:url('../fonts/CormorantGaramond-Medium.woff') format('woff');
+}
+
+body,html {
+	background-color:#FFF;
+
+	margin:0; padding:0; font-family:Arial, Verdana,"微软雅黑";color:#666; font-size:16px; line-height:1.1;-webkit-text-size-adjust: none;
+}
+html {
+    overflow-y: scroll;
+	overflow-x:hidden;
+}
+*{
+	padding:0;
+	margin: 0;
+}
+
+body{
+	width: 100%;
+	min-width: 1180px;
+}
+	#menu{
+  width:60px;height:200px;
+  position:fixed;
+  top:250px;left:30px;
+  z-index: 10;
+  display: none;
+ }
+  #menu ul li{
+  width:60px;height:32px;
+  list-style-type:none;
+  color:#8F8583;
+  text-align:center;
+  line-height: 32px;
+  border-bottom:1px dotted #ddd;
+  position:relative;
+  cursor: pointer;
+ }
+  #menu ul li span{
+  display:block;
+  width:60px;
+  height:32px;
+  background:#C81623;
+  position:absolute;
+  top:0;left:0;
+  color:#fff;font-size:12px;
+  display: none;
+ }
+ #menu ul li:hover span{display:block; }
+ #menu ul li span.active{color:#C81623;background:#fff;display:block;}
+#content{
+  width:1220px;
+  margin:0 auto;
+ }
+
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+.clear {
+	clear: both;
+}
+.cur {
+	background-color: #eee;
+}
+
+.cur1 {
+	background-color: #f29c9f;
+	/*background:url(../img/logo1.png)no-repeat 20px;*/
+	background: #f29c9f url(../img/logo1.png) 0px center no-repeat;
+	background-size:60% 80%;
+	width: 20px;
+	height: 20px;
+}
+/*顶部*/
+.top {
+	width: 100%;
+/*	height: 100px;*/
+	background-color: #f29c9f;
+}
+.top-bar {
+	width: 60%;	
+	margin:0 auto;
+	position: relative;
+
+}
+.top-bar img{
+	display: block;
+}
+.logo {
+	width: 15%;
+	/*background: url(../img/logo.png) 0 0 no-repeat;*/
+
+
+
+}
+.title {
+	width: 75%;
+	position: absolute;
+	left: 20%;
+	top: 5px;
+
+}
+.top-nav {
+	width: 100%;
+	/*height: 50px;*/
+	background-color: #f2f2f2;
+	font-size: 18px;
+	min-width: 1180px;
+	position: relative;
+	/*overflow: hidden;*/
+}
+.top-cen {
+	width: 60%;
+	margin: 0 auto;
+	max-width: 1920px;
+    min-width: 1180px;
+    position: relative;
+}
+.en {
+
+	margin-left: 2%;
+	width: 25%;
+	height: 50px;	
+}
+.en p{
+	float: left;
+	width: 90px;
+	height: 50px;
+	line-height: 50px;
+}
+.en p a {
+color: red;
+}
+.en p a:hover {
+color: #d27667;
+
+}
+.top-nav ul  {	
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 700px;
+}
+.top-nav ul li {
+	float: left;
+	width: 18%;
+	list-style: none;
+	font-size: 20px;
+	line-height: 50px;
+	position: relative;
+	margin-right: 1%;
+	height: 50px;
+	cursor: pointer;	
+	color: #000;
+}
+	.top-nav ul li img{
+		position: absolute;
+		left: 85px;
+		top: 20px;
+	}
+	.top-nav ul li:nth-child(4) img {
+		position: absolute;
+		left:0;
+		top:15px;
+	}
+	.top-nav ul li:last-child img {
+		position: absolute;
+		left:0;
+		top:13px;
+	}
+	.top-nav ul li:nth-child(4) span {
+		margin-left: 30px;
+	}
+
+	.top-nav ul li:last-child span {
+		margin-left: 20px;
+	}
+.top-nav ul li  span{
+	color: #000;
+	
+}
+.top-nav ul li:hover {
+	color: red;
+}
+.top-nav ul li:hover span{
+	color: red;
+}
+.top-nav ul li:hover div {
+	display: block;
+}
+/**********************************下拉菜单****************************/
+.wait {
+	width: 80%;
+	height: 50px;
+	border:1px solid #000;
+	background-color: #fff;
+	position: absolute;
+	top:50px;
+	left: 0;
+	z-index: 10;
+	display: none;
+	text-align: center;
+}
+.wait1 {
+	width: 100%;
+	height: 100px;	
+}
+.top-nav .wait1 .erwei{
+	width: 100%;
+	height: 100px;
+		position: absolute;
+		left:0;
+		top:0;
+}
+
+.top-nav .wait p {
+	height: 50%;
+	line-height: 25px;
+}
+.top-nav .wait a {
+	font-size: 16px;
+}
+.top-nav .wait p:hover {
+	background-color: #f5f5f5;
+}
+.search {
+	width: 100%;
+	height: 80px;
+	/*border-bottom: 2px solid #000;*/
+	position: relative;	
+	max-width: 1920px;
+	min-width: 1200px;
+}
+.logo-duoduo {
+	width: 210px;
+	height: 80px;
+	position: relative;
+}
+.logo-duoduo img{
+	margin-top: 10px;
+}
+.logo-duoduo p {
+	font-size: 32px;
+	position: absolute;
+	top: 30px;
+	left: 80px;
+	font-weight:bold;
+}
+.search-a {
+	width: 60%;
+	height: 80px;
+	/*margin: 0 auto;*/
+	max-width: 1920px;
+	min-width: 1180px;
+	margin-left: 20%;
+
+}
+.search-bar {
+	width: 30%;
+	height: 50px;
+	border: 4px solid #eeeeee;
+	font-size: 18px;
+	color: #a9a9a9;
+	line-height: 50px;
+	position: absolute;
+	top: 11px;
+	right: 20%;
+	padding-left: 10px;
+	outline:none;
+}
+.search-but {
+	width: 100px;
+	height: 50px;
+	background-color: #000000;
+	position: absolute;
+	top:15px;
+	right: 20.2%;
+	
+}
+.ex-search { 
+    position: relative; 
+} 
+.ex-search:before { 
+    content: ' '; 
+    position: absolute; 
+    width: 23px; 
+    height: 23px; 
+    border: 3px solid #fff; 
+    border-radius: 30px;    
+} 
+.ex-search::after { 
+    content: ' '; 
+    position: absolute; 
+    width: 18px; 
+    height: 5px; 
+    background: #fff; 
+    border-radius: 5px 0 0 5px; 
+    -webkit-transform: rotate(225deg); 
+    -moz-transform: rotate(225deg); 
+    -ms-transform: rotate(225deg); 
+    -o-transform: rotate(225deg); 
+    transform: rotate(225deg); 
+} 
+.ex-search:before { 
+    top: 5px; 
+    left: 3px; 
+} 
+.ex-search:after { 
+    right: 59px; 
+    bottom: -40px; 
+} 
+.search-but span {
+	font-size: 20px;
+	color: #fff;
+	margin-left: 40px;
+	line-height: 50px;
+}
+.ex-search-1{
+	position: relative; 
+}
+.ex-search-1::after {
+	content: ' '; 
+    position: absolute; 
+    width: 26px; 
+    height: 1px; 
+    background: #fff; 
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg); 
+}
+.ex-search-1::after {
+	right: -3px;
+	bottom: 9px;
+}
+@media only screen and (max-width: 1200px) {
+	.title {
+		left: 35%;
+	}
+	.top-nav {
+		font-size: 16px;
+	}
+	.en {
+		margin-left: 18%;
+	}
+	.en p {
+		width: 30%;
+	}
+	.top-nav ul {
+		right: 2%;
+	}
+	.top-nav ul li {
+		font-size: 18px;
+	}
+
+	.logo-duoduo p {
+		font-size: 28px;
+		left: 85px;
+	}
+	.search-bar {
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 23%;
+    padding-left: 10px;
+}
+	.search-but {
+    width: 80px;
+    height: 40px;
+    background-color: #000000;
+    position: absolute;
+    top: 24px;
+    right: 23.3%;
+	}
+	.ex-search:before {
+    top: 5px;
+    left: 3px;
+}
+.ex-search:before {
+    content: ' ';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+.ex-search:after {
+    right: 45px;
+    bottom: -32px;
+    height: 2px;
+}
+.search-but span {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 30px;
+    line-height: 40px;
+}
+}
+@media only screen and (max-width: 1700px) and (min-width: 1200px) {
+	.en {
+		margin-left: 15%;
+	}
+
+}
+/*导航*/
+.nav {
+	width: 60%;
+	height: 60px;
+	border-bottom: 1px solid #000;
+	margin-left: 20%;
+	min-width: 1180px;
+}
+.nav .nav-a {
+	width: 15%;
+	list-style: none;
+	float: left;
+	font-size: 26px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*banner图*/
+	.swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.banner {
+	width: 100%;
+}
+.swiper-slide img{
+			width: 100%;
+		}
+.lunbo {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.lunbo ul {
+	width: 500%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow:hidden;
+	position: relative;
+}
+.lunbo ul li {
+	list-style: none;
+	width: 20%;
+	float: left;
+}
+
+
+.lunbo ol{
+	position: absolute;
+	left: 50%;
+	margin-left: -55px;
+	bottom: 10px;
+	width: 110px;
+	list-style: none;
+	border: 1px solid red;
+}
+.lunbo ol li {
+	float: left;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: blue;
+	margin-right: 10px;
+	 overflow:hidden;
+}
+.lunbo ol li.dot {
+	background-color: red;
+}
+/*******************产品*************************************/
+.pro {
+	width: 100%;
+	position: relative;
+	min-width: 1180px;
+	overflow: hidden;
+
+}
+.pro div {
+	float: left;
+}
+.pro-n {
+	width: 20%;
+}
+.pro-n ul {
+	width: 40%;
+	margin-top: 68px;
+	margin-left: 55%;
+	
+}
+.pro-n ul li {
+	list-style: none;
+	width: 90%;
+	height: 80px;
+	font-size: 24px;
+	position: relative;
+}
+.pro-n ul li span {
+	line-height: 86px;
+	margin-left: 2.5%;
+	font-size: 26px;
+}
+.pro-n ul li a {
+	display: block;
+	width: 60px;
+	position: absolute;
+	top:12px;
+	right: -10px;
+}
+.list {
+	width: 60%;
+	margin: 0 auto;
+	margin-left: 20%;
+}
+.moban {
+	width: 100%;
+}
+.moban img {
+	display: block;
+}
+.moban p {
+	font-size: 14px;
+}
+.moban span {
+	color: red;
+}
+.moban del {
+	color: #818181;
+}
+.list li {
+	list-style: none;
+}
+.one {
+	width: 100%;
+	height:52px;
+	position: relative;
+	min-width: 818px;
+}
+
+.second {
+	background-color: #ea68a2;
+	width: 17%;
+	height:38px;
+	font-size: 30px;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	margin-top: 14px;
+}
+@media only screen and (max-width: 1200px) {
+	.second {
+		background-color: blue;
+			width: 15%;
+			font-size: 24px;
+			}
+	.nav li {
+		    font-size: 20px;
+		    width: 10%;
+	}
+
+	 .pro-n ul li a {
+	 	width: 50px;
+			    right: -7px;
+			    top: 18px;
+	 }
+	 .pro-n ul li {
+	 	width: 100%;
+	 	height: 70px;
+	 	font-size: 20px;
+	 }
+}
+@media only screen and (max-width: 1800px) and (min-width: 1200px){
+
+.pro-n ul li {
+	 	width: 100%;
+	 	height: 70px;
+	 	font-size: 22px;
+	 }
+}
+.one ol {
+	width: 75%;
+	height: 52px;
+	position: absolute;
+	bottom: 0;
+	left:20%;
+}
+.one ol li {
+	width: 14%;
+	height: 38px;
+	float: left;
+	margin-right: 32px;
+	font-size: 18px;
+	margin-top: 14px;
+	line-height: 20px;
+	font-weight: 600;
+}
+.one ol li a:hover {
+	color: red;
+}
+.list ul {
+	width: 100%;
+}
+.list ul li {
+	width: 18%;
+	height: 100%;
+	float: left;
+	margin-left: 1.8%;
+	border:1px solid #fff;
+}
+.list ul li:hover {
+	border:1px solid #f29c9f;
+}
+.list ul li img {
+	width: 100%;
+	height: 60%;
+	
+}
+.list ul .special {
+	width: 17%;
+	margin-right: 2.5%;
+	margin-left: 0;
+}
+.list ul .special img{
+	height: 60%;
+}
+
+/********************************************底部**************************************************/
+footer {
+	width:100%;
+	min-width: 700px;
+	background-color: #333333;
+}
+.info {
+	width: 70%;
+	margin: 0 auto;
+}
+.info .info1 {
+	width: 700px;
+	height: 80px;
+	font-size: 24px;
+}
+.info1 a{
+	color: #fff;
+	border-right: 2px solid #fff;
+	padding: 0 20px;
+}
+.info .info1 div{
+	list-style: none;
+	float: left;
+	line-height: 80px;
+}
+.info1 div:first-child {
+	padding-left: 0;
+}
+.info1 div:last-child {
+	border: none;
+}
+.info-a-box{
+	overflow: hidden;
+	width: 100%;
+	height: 180px;
+	position: relative;
+	min-width: 800px;
+}
+
+.info-a {
+	width: 76%;
+	height: 160px;
+}
+.info-a li{
+	list-style: none;
+	width: 24%;
+	height: 160px;
+	border-left: 1px solid #fff;
+	float: left;
+}
+.info-a ol {
+	width: 100%;
+	text-align: center;
+}
+.info-a ol li {
+	border: none;
+	font-size: 14px;
+	height: 30px;
+	width: 100%;
+}
+.info-a ol li:first-child {
+	font-size: 20px;
+}
+.info-a ol li a {
+	text-decoration:none;
+	color: #fff;
+}
+.info-a li:first-child {
+border: none;
+}
+.info-b {
+	width: 100%;
+}
+.info-a .info-b li {
+	width: 100%;
+	padding-left: 0;
+}
+.phone {
+	width: 28%;
+	height: 190px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.phone p {
+	font-size: 24px;
+	color: #fff;
+	width: 100%;
+}
+.phone p img {
+	margin-right: 20px;
+}
+.time {
+	font-size: 16px;
+	color: #b7b7b7;
+}
+.wei {
+	width: 65%;
+	height: 125px;
+	margin-top: 4px;
+}
+.permit {
+	font-size: 22px;
+	color: #fff; 
+	width: 450px;
+	margin:0 auto;                      
+	}
+@media only screen and (max-width: 1200px) {
+.info .info1 {
+	font-size: 22px;
+}
+.phone {
+	width: 24%;
+}
+.wei img{
+		width: 100%;
+}
+.phone p{
+	font-size: 18px;
+}
+.wei {
+	width: 100%;
+
+}
+}

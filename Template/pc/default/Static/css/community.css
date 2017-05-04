@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.int {
+	margin: 10px auto;
+	width: 592px;
+}
+	.textinput {
+	border:1px solid #d4cebe;
+	width: 592px;
+	height: 68px;
+	overflow: hidden;
+}
+	.textarea {
+		width: 443px;
+		height: 68px;
+		float: left;
+		outline: none;
+	}
+
+
+.attach {
+	width: 149px;
+	height: 68px;
+    background-color: #f8f6f2;
+     border-color: #d4cebe;
+      float: left;
+}
+.item {
+	width: 48px;
+	padding-top: 20px;
+	border-left: 1px solid #d4cebe;
+	height: 68px;
+	float: left;
+}
+.icon {
+	display: block;
+    width: 24px;
+    height: 24px;
+	background-image:url(../img/102.32.png );
+	background-position: -301px -76px;
+	margin:0 auto;
+	 
+}
+.icon:hover{
+	background-image:url(../img/102.32.png );
+	background-position: -301px -102px;
+
+    }
+ .icon1 {
+	display: block;
+    width: 24px;
+    height: 24px;
+	background-image:url(../img/102.32.png );
+	background-position: -250px -180px;
+	margin:0 auto;
+
+}
+.icon1:hover{
+	background-image:url(../img/102.32.png );
+	background-position: -250px -206px
+
+    }
+     .icon2 {
+	display: block;
+    width: 24px;
+    height: 24px;
+	background-image:url(../img/102.32.png );
+	background-position: -250px -233px;
+	margin:0 auto;
+
+}
+.icon2:hover{
+	background-image:url(../img/102.32.png );
+	background-position: -250px -259px
+
+    }
+    .txt {
+    	display: none;
+    }
+
+.fl {
+	width: 592px;
+	height: 39px;
+	border:1px solid #d4cebe;
+	border-top: none;
+	position: relative;
+}
+.fk {
+	width: 78px;
+	height: 16px;
+	position: absolute;
+	    top: 11px;
+    left: 10px;
+	
+}
+.fk a {
+	display: inline-block;
+    height: 16px;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+
+}
+.ic {
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    /*vertical-align: middle;*/
+    background-repeat: no-repeat;
+	background-image: url(../img/102.32.png);
+}
+.icon-emot {	
+    background-position: -198px 0;
+}
+.icon-emot:hover {	
+    background-position: -250px 0;
+}
+.icon-at {	
+background-position: -250px -26px;
+}
+.icon-at:hover {	
+background-position: -250px -52px;
+}
+.icon-topic {	
+        background-position: -250px -78px;
+}
+.icon-topic:hover {	
+        background-position: -250px -104px;
+}
+.fj {
+	width: 57px;
+	height: 30px;
+	position: absolute;
+	top: 4px;
+    right: 4px;
+    padding:0 10px;
+    background-color: #b3a57d;
+    border-radius: 2px;
+}
+.fj:hover {
+	background-color: #bfb086;
+}
+.t {
+	/*position: relative;*/
+    width: 55px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+ 	color: #fff;
+    vertical-align: middle;
+   text-decoration: none;
+    display: inline-block;
+    padding:0 10px;
+}
+.inp{
+	width: 60%;
+	height: 200px;
+	position: relative;
+	margin: 0 auto;
+
+}
+.write {
+	width: 440px;
+	height: 68px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border:1px solid #c9c9c9;
+
+}
+
+
+
+.da {
+	width: 60%;
+	border:1px solid #eee;
+	margin: 0 auto;
+}
+
+.shipin {
+	width: 60%;
+	/*height: 500px;*/
+	background-color: #f0f0f0;
+	margin:0 auto;
+	overflow: hidden;
+	min-width: 900px;
+}
+.jingcai {
+	width: 100%;
+	height: 40px;
+	font-size: 24px;
+	line-height:40px;
+	position: relative;
+}
+.jingcai a {
+	color: #4b4b4b;
+}
+.jingcai a:hover {
+	color: #000;
+}
+
+.gengduo {
+	position: absolute;
+	top:0;
+	right: 10px;
+}
+.gengduo a {
+	font-size: 16px; 
+}
+
+.shipin ul {
+	width: 100%;
+
+}
+.shipin ul li {
+	width: 23.5%;
+	float: left;
+	list-style: none;
+	margin-left: 1%;
+	height: 280px;
+	border:1px solid #f0f0f0;
+}
+.shipin ul li:hover {
+	border:1px solid #333;
+
+}
+.shipin ul li:hover a {
+	color: red;
+}
+.shipin .tu {
+	width: 100%;
+	height: 80%;
+}
+.shipin .tu img {
+	width: 100%;
+	height: 100%;
+}
+.shipin .cba {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 5px;
+}
+.tiezi {
+	width: 60%;
+	margin: 10px auto;
+	min-width: 900px;
+	background-color: #fcfcfc;
+	overflow: hidden;
+	border:1px solid #aaa;
+
+}
+.tiezi h4 {
+	width: 100%;
+	padding: 5px;
+	background-color: #f6f6f6;
+}
+
+.tiezi ul  {
+	width: 100%;
+	
+}
+.tiezi ul li {
+	width: 48%;
+	border-bottom:1px dashed #f0f0f0;
+	float: left;
+	font-size: 16px;
+	/*color: #c9c9c9;*/
+	line-height: 30px;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.tiezi ul li:hover {
+	text-decoration: underline;
+	
+}

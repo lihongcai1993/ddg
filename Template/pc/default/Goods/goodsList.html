@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$tpshop_config['shop_info_store_title']}</title>
+</head>
+<link nk rel="stylesheet" href="__STATIC__/css/style.css">
+<link rel="stylesheet" href="__STATIC__/css/shopping.css">
+<link rel="stylesheet" href="__STATIC__/css/swiper.min.css">
+
+<body>
+	 <div id="menu">
+  <ul>
+   <li>1F<span>美容护肤</span></li>
+   <li>2F<span>彩妆用品</span></li>
+   <li>3F<span>美发护发</span></li>
+   <li>4F<span>男士护肤</span></li>
+  </ul>
+ </div>
+<Include file="Public/header" />
+	<!-- 导航 -->
+	<ul class="nav" id="nav">
+		<li class="nav-a"><a href="{:U('Index/index')}">首页</a></li>
+		<li class="cur blk nav-a"><a href="{:U('Goods/goodslist')}">多多购物</a> 
+		  <div class="shopping-nav" id="shopping-nav" style="display:none;">
+        	<ol>
+        		<foreach name="row" item="v" key="k">
+        		<li><a <if condition="$k eq 0">class='cur2'</if> >{$v.name}</a></li>
+        		</foreach>
+        		
+        	</ol>
+        	<div class="shopping-nav_ul">
+        	<foreach name="res" item="vv" key="k">
+        	<ul class="nth{$k+1}" style="height:81px;">
+        		<foreach name="vv" item="vvv">
+        		<li><a href="{:U('Goods/goodsListSecond?id='.$vvv['id'])}">{$vvv.name}</a></li>
+        		</foreach>
+        	</ul>
+        	</foreach>
+        	</div>
+    	</div></li>
+		<li class="nav-a"><a href="{:U('BBS/bbs')}">我的社区</a></li>
+		<li class="nav-a"><a href="{:U('GroupBuy/index')}">活动优惠</a></li>
+		<li class="nav-a"><a href="{:U('Vip/vip')}">会员中心</a></li>
+	</ul>
+		<!-- banner图 -->
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <adv  pid = "1" limit="4" item="v">     
+            <div class="swiper-slide"><img src="{$v['ad_code']}" alt="" ></div>
+        </adv>  
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+     
+    </div>
+
+	<div class="content">
+		<div class="content-nav">
+		<adv  pid = "51319" limit="4" item="v">     
+			<div><a href=""><img src="{$v['ad_code']}" alt=""></a></div>
+		</adv> 
+		
+		</div>
+
+		<foreach name="row" item="v">
+		<div class="classify"> 
+			<div class="classify-left">
+				<div class="classify-one">
+					<div class="classify-one1">{$v.name}</div>
+					<div class="classify-one2">
+						<ul>
+							<foreach name="v.sontype" item="vv">
+							<li><a href="{:U('Goods/goodsListSecond?id='.$vv['id'])}">{$vv.name}</a></li>
+							</foreach>
+						</ul>
+					</div>
+				</div>
+				<div class="classify-two"><a href=""><img src="{$v.image2}" alt=""></a></div>
+				<div class="classify-three"><a href=""><img src="{$v.image3}" alt=""></a></div>
+		</div>
+
+
+
+			<div class="classify-right">
+			<div class="right-one">
+			<foreach name="v.goods" item="vvv" key="k">
+				<if condition="$k lt 3">
+				<div><a href="{:U('Goods/goodsinfo?id='.$vvv['goods_id'])}"><p>{$vvv.goods_name|strlength=12}</p><span>{$vvv.keywords|strlength=12}</span><img src="{$vvv.original_img}" alt=""></a></div>
+				</if>
+			</foreach>
+				
+
+			</div>
+			<div class="right-two">
+			<foreach name="v.goods" item="vvv" key="k">
+				<if condition="$k gt 2 and $k lt 6">
+				<div><a href="{:U('Goods/goodsinfo?id='.$vvv['goods_id'])}"><p>{$vvv.goods_name|strlength=12}</p><span>{$vvv.keywords|strlength=12}</span><img src="{$vvv.original_img}" alt=""></a></div>
+				</if>
+			</foreach>
+				
+			</div>
+				</div>
+				</div>
+			</foreach>
+
+				
+			<footer id="footer">
+		<div class="info">
+		<div class="info1">
+		<div><a href="">关于多多购</a></div>
+		<div><a href="">多多购手机端</a></div>
+		<div><a href="">联系我们</a></div>
+		<div><a href="">友情链接</a></div>
+		</div>	
+		<div class="info-a-box">	
+			<ul class="info-a">
+				<li>
+				<ol class="info-b">
+					<li><a href="">新手指南</a></li>
+					<li><a href="">优惠券相关说明</a></li>
+					<li><a href="">代购流程</a></li>
+					<li><a href="">会员与积分</a></li>
+					<li><a href="">代购费用</a></li>
+					<li><a href="">代购订单状态</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">付款方式</a></li>
+					<li><a href="">信用卡付款</a></li>
+					<li><a href="">银行卡付款</a></li>
+					<li><a href="">支付宝付款</a></li>
+					<li><a href="">微信支付</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">配送相关</a></li>
+					<li><a href="">运送区域、方式与运费</a></li>
+					<li><a href="">最新大货物物流状态</a></li>
+					<li><a href="">海关及税项</a></li>
+					<li><a href="">商品保管期限</a></li>
+					<li><a href="">包裹跟踪</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">售后服务/退款</a></li>
+					<li><a href="">无理由退货</a></li>
+					<li><a href="">退换货政策</a></li>
+					<li><a href="">我要投诉</a></li>
+					<li><a href="">退款方式</a></li>
+				</ol>
+				</li>
+			</ul>
+			<div class="phone">
+				<p><img src="__STATIC__/img/phone.jpg" alt="" >024-00010002</p>
+				<div class="time">周一至周日，早8:00至晚18:00</div>
+				<div class="wei"><img src="__STATIC__/img/wei.jpg" alt=""></div>
+			</div>
+	</div>
+			<div class="permit">
+			    经营许可：*ICP12001605-4  @2017多多购
+			</div>
+		</div>
+
+	</footer>
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/swiper.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/vip.js"></script>
+	<script type="text/javascript">
+
+		$(".blk").mouseenter(function(){
+		$("#shopping-nav").fadeIn("fast");
+		})
+		.mouseleave(function(){
+		 $("#shopping-nav").hide();
+			})
+	</script>
+</body>
+</html>

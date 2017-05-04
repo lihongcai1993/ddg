@@ -1,0 +1,95 @@
+[ 2017-05-03T15:17:10+08:00 ] ::1 /index.php/Home/Goods/goodsinfo/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001909s ]
+NOTIC: [8] Undefined variable: specstr D:\UPUPW\htdocs\Application\Home\Logic\GoodsLogic.class.php 第 688 行.
+INFO: [ view_begin ] --START--
+INFO: Run Home\Behaviors\testBehavior [ RunTime:0.002745s ]
+INFO: [ view_begin ] --END-- [ RunTime:0.002788s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: level D:\UPUPW\htdocs\ThinkPHP\Library\Think\Template\TagLib\Tpshop.class.php 第 155 行.
+NOTIC: [8] Undefined index: level D:\UPUPW\htdocs\ThinkPHP\Library\Think\Template\TagLib\Tpshop.class.php 第 155 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: group_sale D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 94 行.
+NOTIC: [8] Undefined variable: flash_sale D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 95 行.
+NOTIC: [8] Use of undefined constant src - assumed 'src' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 104 行.
+NOTIC: [8] Use of undefined constant src - assumed 'src' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 104 行.
+NOTIC: [8] Use of undefined constant src - assumed 'src' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 104 行.
+NOTIC: [8] Undefined variable: flash_sale D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 128 行.
+NOTIC: [8] Undefined variable: group_sale D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 128 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 214 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 214 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 214 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 214 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 214 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant article_id - assumed 'article_id' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' D:\UPUPW\htdocs\Application\Runtime\Cache\Home\f204e39a27404b28c0ba9464a884139e.php 第 218 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002742s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2017-05-03T15:17:11+08:00 ] ::1 /index.php/Home/Goods/goodsInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+
+[ 2017-05-03T15:17:12+08:00 ] ::1 /index.php/Home/Goods/goodsInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+
+[ 2017-05-03T15:17:12+08:00 ] ::1 /index.php/Home/Goods/goodsInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+
+[ 2017-05-03T15:17:13+08:00 ] ::1 /index.php/Home/Goods/add_cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+

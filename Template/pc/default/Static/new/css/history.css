@@ -1,0 +1,19 @@
+.moban ul {
+	width: 100%;
+}
+.moban ul li {
+	width: 21%;
+	list-style: none;
+	float: left;
+	margin-right: 3%;
+	height: 260px;
+	border:1px solid #fff;
+	margin-top: 20px;
+}
+.moban ul li:hover {
+	border:1px solid red;
+}
+.right_site_biaodan {
+	overflow: hidden;
+	height: 100%;
+}

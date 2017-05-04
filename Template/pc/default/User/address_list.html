@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$tpshop_config['shop_info_store_title']}</title>
+    <link rel="stylesheet" href="__STATIC__/css/style.css">
+    <link rel="stylesheet" href="__STATIC__/css/enter.css">
+    <link rel="stylesheet" href="__STATIC__/css/payment.css">
+    <link rel="stylesheet" href="__STATIC__/css/site.css">
+    <link rel="stylesheet" href="__STATIC__/build/css/intlTelInput.css">
+    <!-- <link rel="stylesheet" href="build/css/demo.css"> -->
+    <script type="text/javascript" src="__STATIC__/js/daohang.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/xiala.js"></script>
+    <script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+    <script src="__STATIC__/build/js/intlTelInput.js"></script>
+<SCRIPT LANGUAGE = JavaScript> 
+
+
+
+
+
+var s=["s1","s2","s3"];
+
+<?php if($selectadds['country']){?>
+    var country="<?php echo $selectadds['country']; ?>";
+    var province="<?php echo $selectadds['province']; ?>";
+    var city="<?php echo $selectadds['city']; ?>";
+<?php }else{?>
+    var country="国家";
+    var province="省份、州";
+    var city="地级市、县";
+<?php } ?>
+
+
+var opt0 = [country,province,city]; 
+function setup() 
+{ 
+for(i=0;i<s.length-1;i++) 
+document.getElementById(s[i]).onchange=new Function("change("+(i+1)+")"); 
+change(0); 
+} 
+//--> 
+</SCRIPT> 
+</head>
+<body   onLoad="setup()" >
+    <Include file="Public/header" />
+    <ul class="nav" id="nav">
+        <li class="nav-a"><a href="{:U('Index/index')}">首页</a></li>
+        <li class="nav-a"><a href="{:U('Goods/goodslist')}">多多购物</a></li>
+        <li class="nav-a"><a href="{:U('BBS/bbs')}">我的社区</a></li>
+        <li class="nav-a"><a href="{:U('GroupBuy/index')}">活动优惠</a></li>
+        <li class="nav-a"><a href="{:U('Vip/vip')}">会员中心</a></li>
+    </ul>
+    <div class="person">
+        <div class="person_nom">
+            <div class="nom_left">
+                <div class="nom_left_a">个人中心</div>
+                <div id="but">
+                    交易管理
+                    <span>
+                        <img src="__STATIC__/img/down.png" alt="" id="one">
+                        
+                    </span>
+                </div>
+                <ul id="sli">   
+                    <li><a href="">我的订单</a></li>
+                 
+                    <li><a href="">历史浏览</a></li>
+                </ul>
+                <div id="but1">
+                    账户管理
+                        <span>
+                            <img src="__STATIC__/img/down.png" alt="" id="two">
+                        </span>
+                </div>
+                <ul id="sli1">
+                    <li><a href="{:U('User/index')}">个人资料</a></li>
+                    <li><a href="{:U('User/safe')}">账户安全</a></li>
+                    <li><a href="{:U('User/address_list')}">收货 地址</a></li>
+                </ul>
+            </div>
+            <div class="nom_right">
+                <div class="nom_right_site"><span>收货地址</span></div>
+                <div class="right_site_biaodan" >
+                    <form action="" id="f1">
+                        <div class="site_biaodan_a">    
+                            <span>所在地区<i>*</i></span>
+                            <select id="s1" name="country">
+                                <if condition="$selectadds['country']">
+                                    <option value="{$selectadds.country}" selected>{$selectadds.country}</option>
+                                <else/>
+                                    <option>国家</option>
+                                </if>
+                            </select> 
+                            <select id="s2" name="province"><option>省份、州</option></select> 
+                            <select id="s3" name="city"><option>地级市、县</option></select>      
+                        </div>
+                        <div class="site_biaodan_b">
+                            <span>详细地址<i>*</i></span><textarea rows="10" cols="30" name="address">{$selectadds.address}</textarea>
+                        </div>
+                        <div class="site_biaodan_c">
+                            <span>邮政编码</span><input type="text" name="zipcode" value="{$selectadds.zipcode}" placeholder="如您不清楚区号，请填写000000">
+                        </div>
+                        <div class="site_biaodan_d">
+                            <span>收货人姓名<i>*</i></span><input type="text" name="consignee" value="{$selectadds.consignee}" placeholder="长度不超25个字符">
+                        </div>
+                        <div class="site_biaodan_c">
+                            <span>手机号码</span><input id="mobile-number" name="mobile" type="tel" value="{$selectadds.mobile}" placeholder="e.g. +86 130 1233 4567" >
+                        </div>
+                        <div class="site_biaodan_e">
+                            <input type="checkbox" name="is_default" <if condition="$selectadds['is_default'] eq 1">checked</if> value="1"><span>设置为默认收货地址</span>
+                        </div>
+                        <div class="site_biaodan_f">
+                            <input type="hidden" name="old_address_id" value="{$selectadds.address_id}">
+                            <input type="button" value="保存" onClick="adds()">
+                        </div>
+                    </form>
+                <div class="right_site_biaodan_con">
+
+                    <table  id="tb">
+                        <tr class="bgc">
+                            <th>收货人</th>
+                            <th>所在地区</th>
+                            <th>详细地址</th>
+                            <th>邮编</th>
+                            <th>电话</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name="lists" item="l">
+                        <tr <if condition="$l['is_default'] eq 1">style="background-color: #ff4001;color:#fff"</if> >
+                            <td>{$l.consignee}</td>
+                            <td>{$l.country}{$l.province}{$l.city}</td>
+                            <td>{$l.address}</td>
+                            <td>{$l.zipcode}</td>
+                            <td>{$l.mobile}</td>
+                            <td ><a href="{:U('User/address_list?id='.$l['address_id'])}" >修改</a>&nbsp; <a href="javascript:deladds({$l['address_id']})" onClick="return confirm('是否删除！')">删除</a></td>
+                        </tr>
+                        </foreach>
+                    </table>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <div class="foot">
+            <ul>
+                <li>
+
+                    <div><img src="__STATIC__/img/zp.jpg" alt=""></div>
+                    <div>正品保障</div>
+                    <div>全场正品，行货保障</div>
+                </li>
+                <li>
+                    <div><img src="__STATIC__/img/zp1.jpg" alt=""></div>
+                    <div>新手指南</div>
+                    <div>快速登录，无需注册</div>
+                </li>
+                <li>
+                    <div><img src="__STATIC__/img/zp2.jpg" alt=""></div>
+                    <div>货到付款</div>
+                    <div>货到付款，安心便捷</div>
+                </li>
+                <li>
+                    <div><img src="__STATIC__/img/zp3.jpg" alt=""></div>
+                    <div>维修保障</div>
+                    <div>服务保证，全国联保</div>
+                </li>
+                <li>
+                    <div><img src="__STATIC__/img/zp4.jpg" alt=""></div>
+                    <div>无忧退货</div>
+                    <div>无忧退货，7日尊享</div>
+                </li>
+                <li>
+                    <div><img src="__STATIC__/img/zp5.jpg" alt=""></div>
+                    <div>会员权益</div>
+                    <div>会员升级，尊贵特权</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="info">
+        <div class="info1">
+        <div><a href="">关于多多购</a></div>
+        <div><a href="">多多购手机端</a></div>
+        <div><a href="">联系我们</a></div>
+        <div><a href="">友情链接</a></div>
+        </div>  
+        <div class="info-a-box">    
+            <ul class="info-a">
+                <li>
+                <ol class="info-b">
+                    <li><a href="">新手指南</a></li>
+                    <li><a href="">优惠券相关说明</a></li>
+                    <li><a href="">代购流程</a></li>
+                    <li><a href="">会员与积分</a></li>
+                    <li><a href="">代购费用</a></li>
+                    <li><a href="">代购订单状态</a></li>
+                </ol>
+                </li>
+                <li>
+                <ol>
+                    <li><a href="">付款方式</a></li>
+                    <li><a href="">信用卡付款</a></li>
+                    <li><a href="">银行卡付款</a></li>
+                    <li><a href="">支付宝付款</a></li>
+                    <li><a href="">微信支付</a></li>
+                </ol>
+                </li>
+                <li>
+                <ol>
+                    <li><a href="">配送相关</a></li>
+                    <li><a href="">运送区域、方式与运费</a></li>
+                    <li><a href="">最新大货物物流状态</a></li>
+                    <li><a href="">海关及税项</a></li>
+                    <li><a href="">商品保管期限</a></li>
+                    <li><a href="">包裹跟踪</a></li>
+                </ol>
+                </li>
+                <li>
+                <ol>
+                    <li><a href="">售后服务/退款</a></li>
+                    <li><a href="">无理由退货</a></li>
+                    <li><a href="">退换货政策</a></li>
+                    <li><a href="">我要投诉</a></li>
+                    <li><a href="">退款方式</a></li>
+                </ol>
+                </li>
+            </ul>
+            <div class="phone">
+                <p><img src="__STATIC__/img/phone.jpg" alt="">024-00010002</p>
+                <div class="time">周一至周日，早8:00至晚18:00</div>
+                <div class="wei"><img src="__STATIC__/img/wei.jpg" alt=""></div>
+            </div>
+    </div>
+            <div class="permit">
+                经营许可：*ICP12001605-4  @2017多多购
+            </div>
+        </div>
+
+    </footer>
+</body>
+    <script type="text/javascript">
+  function adds()
+  {
+      $.post("{:U('User/add_address')}",$("#f1").serialize(),function(data){
+            if(data.status==1)
+            {
+                alert(data.msg);
+                history.go(0);
+            }
+            else
+            {
+                alert(data.msg);
+            }
+      });
+  }
+
+</script>
+<script type="text/javascript">
+function deladds(id)
+{
+    $.post("{:U('User/del_address')}",{id:id},function(data){
+            if(data==1)
+            {
+                alert("操作成功");
+                history.go(0);
+            }
+            else
+            {
+                alert("操作失败");
+            }
+      });
+}
+
+
+</script>
+<script>
+
+        daohang();
+        $("#mobile-number").intlTelInput();
+    $(document).ready(function(){
+        $("#but").click(function(){
+            $("#sli").slideToggle();
+            var imgObj = document.getElementById("one");
+            var Flag=(imgObj.getAttribute("src",2)=="__STATIC__/img/down.png")
+                imgObj.src=Flag?"__STATIC__/img/up.png":"__STATIC__/img/down.png";
+    });
+});
+
+    $(document).ready(function(){
+        $("#but1").click(function(){
+            $("#sli1").slideToggle();
+            var imgObj = document.getElementById("two");
+            var Flag=(imgObj.getAttribute("src",2)=="__STATIC__/img/down.png")
+                imgObj.src=Flag?"__STATIC__/img/up.png":"__STATIC__/img/down.png";
+    });
+});
+$(document).ready(function(){  
+    var tb = $("#tb");    
+    // 保存
+    $("#save_btn",tb).off('click').on('click',function(){  
+            var tr = $(this).parent().parent();  
+        $("input[type='text']",tr).each(function(i,el){  
+            el = $(el);  
+            el.parent().text(el.val());  
+            el.remove();  
+        });  
+        $("#save_btn",tr).hide();  
+        $("#edit_btn",tr).show();  
+    });  
+        //修改  
+    $("#edit_btn",tb).off('click').on('click',function(){  
+        var tr = $(this).parent().parent();  
+        $("td:not('#a')",tr).each(function(i,el){  
+            el = $(el);  
+            var html = "<input value='"+el.text()+"' type='text'>";  
+            el.html(html);  
+        });  
+        $("#edit_btn",tr).hide();  
+        $("#save_btn",tr).show();  
+    });  
+      
+    //删除  
+    $("#del_btn",tb).off('click').on('click',function(){  
+        $(this).parent().parent().remove();  
+    });  
+   
+});  
+</script>
+
+</html>

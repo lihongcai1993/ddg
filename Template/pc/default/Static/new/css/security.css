@@ -1,0 +1,58 @@
+.nom_right_head {
+	font-size: 20px;
+	color: #000;
+}
+.nom_right div{
+	float: none;
+	width: 100%;
+	
+}
+.nom_right_top {
+	margin-top: 20px;
+}
+.nom_right_top_one {
+	background-color: #f9f8f6;
+	font-size: 14px;
+	line-height: 28px;
+	border:1px solid #b5b5b5;
+}
+.nom_right_top_one span {
+	color: #000;
+}
+.nom_right_top_one input {
+	float: right;
+	margin-right: 20px;
+	margin-top: 4px;
+
+}
+.nom_right_top .nom_right_top_two {
+	width: 80%;
+	border:1px solid red;
+	margin-left: 50px;
+	margin-top: 20px;
+
+}
+.nom_right_top_two div {
+	height: 30px;
+	margin-top: 10px;
+}
+.nom_right_top_two div input {
+	height: 20px;
+
+}
+.nom_right_top_two div i {
+	width: 16px;
+	display: inline-block;
+}
+.nom_right_top_two button {
+	width: 80px;
+	background-color: #f29c9f;
+	line-height: 32px;
+	height: 32px;
+	border:none;
+	margin-left: 85px;
+}
+.nom_right_top_two .post {
+	margin-left: 10px;
+	
+}

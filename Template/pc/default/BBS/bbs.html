@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="__STATIC__/css/style.css">
+<link rel="stylesheet" href="__STATIC__/css/book.css">
+<link rel="stylesheet" href="__STATIC__/css/swiper.min.css">
+<link rel="stylesheet" href="__STATIC__/css/community.css">
+<link rel="stylesheet" href="__STATIC__/css/jquery.lightbox.css">
+	<script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.config.js"></script>
+  <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.all.min.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+
+<Include file="Public/header" />
+	<!-- 导航 -->
+		<ul class="nav" id="nav">
+		<li class="cur nav-a"><a href="{:U('Index/index')}">首页</a></li>
+		<li class="nav-a"><a href="{:U('Goods/goodslist')}">多多购物</a></li>
+		<li class="nav-a"><a href="{:U('BBS/bbs')}">我的社区</a></li>
+		<li class="nav-a"><a href="{:U('GroupBuy/index')}">活动优惠</a></li>
+		<li class="nav-a"><a href="{:U('Vip/vip')}">会员中心</a></li>
+	</ul>
+		<!-- banner图 -->
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <adv  pid = "1" limit="4" item="v">     
+            <div class="swiper-slide"><img src="{$v['ad_code']}" alt="" ></div>
+        </adv>  
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+	<!-- <form action="" id="biaodan"> -->
+	<div class="da">
+		<table cellspacing="0" cellpadding="0" class="book bookmod2"  id="blt833">
+            <tbody>
+            	<tr>
+                	<td class="bookl">
+                    	<div class="bookl_t"></div>
+                    	<div class="booklimg">
+                        	<img src="__STATIC__/img/faces7.gif" alt="去去去" title="去去去">
+                        	<span>去去去</span>
+                        	<b>女</b>
+                    	</div>
+                	</td>
+               		 <td class="bookr">
+                    	<div class="bb">
+                       	 	<span class="bb06"><a title="去去去"  target="blank">QQ</a></span> 
+                        	<span class="bb01">727519010</span>  
+                    	</div>
+                   		 <div class="bt">
+                        <span class="bt01"></span> 
+                        <span class="bt02">发表于：2016/8/6 8:12:28</span> 
+                        <span class="bt03"><a href="javascript:void(0)" class="hf">回复</a></span>
+                  		</div>           
+                        <div class="be">
+                        	<p>去去去</p><br>
+						</div>
+						<div id="focus" style="display:none">
+		  					<form action="" >
+								<textarea class="textarea Input_text" onfocus="if(this.innerHTML=='请输入内容'){this.					innerHTML=''}"  onblur="if(this.innerHTML==''){this.innerHTML='请输入内容'}" name="c" id="textarea"></textarea>
+								<div class="faceDiv"> </div>
+								 <div class="Input_Foot"> <a class="imgBtn" href="javascript:void(0);"></a><input type="submit" id="submit" value="请输入内容"/></div>
+		  					</form>
+						</div>						
+                	</td>
+            	</tr>
+            	<tr class="nn">
+					<td class="reply bor">
+                    	<div class="reply_t"></div>
+                    	<div class="reply_booklimg">
+                        	<img src="__STATIC__/img/30.png" alt="去去去" title="去去去">
+                        	<span>去去去</span>                       	
+                    	</div>
+                	</td>
+                	 <td class="bookr bor">
+                    	<div class="bbb">
+                       	 	<span class="bb06"><a title="去去去"  target="blank">QQ</a></span> 
+                        	<span class="bb01">5128519852</span>  
+                    	</div>
+                   		 <div class="btb">
+                        <span class="bt01"></span> 
+                        <span class="bt02">发表于：2016/8/6 8:12:28</span> 
+                        <span class="bt03"><a href="javascript:void(0)" class="hf1">回复</a></span>
+                  		</div>           
+                        <div class="beb">
+                        	<p>去去去说的尼塞服你三分我氨基酸念佛送饭</p><br>
+						</div>
+						<div id="focus1" style="display:none">
+						
+		  					<form action="" >
+								<textarea class="textarea Input_text" onfocus="if(this.innerHTML=='请输入内容'){this.					innerHTML=''}"  onblur="if(this.innerHTML==''){this.innerHTML='请输入内容'}" name="c" id="textarea"></textarea>
+								<div class="faceDiv"> </div>
+								 <div class="Input_Foot"> <a class="imgBtn" href="javascript:void(0);"></a><input type="submit" id="submit" value="请输入内容"/></div>
+								 
+		  					</form>
+
+						
+						</div>
+
+                	</td>
+            	</tr>
+
+        	</tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="book bookmod2"  id="blt833">
+            <tbody>
+            	<tr>
+                	<td class="bookl">
+                    	<div class="bookl_t"></div>
+                    	<div class="booklimg">
+                        	<img src="__STATIC__/img/faces7.gif" alt="去去去" title="去去去">
+                        	<span>去去去</span>
+                        	<b>女</b>
+                    	</div>
+                	</td>
+               		 <td class="bookr">
+                    	<div class="bb">
+                       	 	<span class="bb06"><a title="去去去"  target="blank">QQ</a></span> 
+                        	<span class="bb01">727519010</span>  
+                    	</div>
+                   		 <div class="bt">
+                        <span class="bt01"></span> 
+                        <span class="bt02">发表于：2016/8/6 8:12:28</span> 
+                        <span class="bt03"><a href="">回复</a></span>
+                  		</div>           
+                        <div class="be">
+                        	<p>去去去</p><br>
+						</div>						
+                	</td>
+            	</tr>
+        	</tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="book bookmod2"  id="blt833">
+            <tbody>
+            	<tr>
+                	<td class="bookl">
+                    	<div class="bookl_t"></div>
+                    	<div class="booklimg">
+                        	<img src="__STATIC__/img/faces7.gif" alt="去去去" title="去去去">
+                        	<span>去去去</span>
+                        	<b>女</b>
+                    	</div>
+                	</td>
+               		 <td class="bookr">
+                    	<div class="bb">
+                       	 	<span class="bb06"><a title="去去去"  target="blank">QQ</a></span> 
+                        	<span class="bb01">727519010</span>  
+                    	</div>
+                   		 <div class="bt">
+                        <span class="bt01"></span> 
+                        <span class="bt02">发表于：2016/8/6 8:12:28</span> 
+                        <span class="bt03"><a href="">回复</a></span>
+                  		</div>           
+                        <div class="be">
+                        	<p>去去去</p><br>
+						</div>						
+                	</td>
+            	</tr>
+        	</tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="book bookmod2"  id="blt833">
+            <tbody>
+            	<tr>
+                	<td class="bookl">
+                    	<div class="bookl_t"></div>
+                    	<div class="booklimg">
+                        	<img src="__STATIC__/img/faces7.gif" alt="去去去" title="去去去">
+                        	<span>去去去</span>
+                        	<b>女</b>
+                    	</div>
+                	</td>
+               		 <td class="bookr">
+                    	<div class="bb">
+                       	 	<span class="bb06"><a title="去去去"  target="blank">QQ</a></span> 
+                        	<span class="bb01">727519010</span>  
+                    	</div>
+                   		 <div class="bt">
+                        <span class="bt01"></span> 
+                        <span class="bt02">发表于：2016/8/6 8:12:28</span> 
+                        <span class="bt03"><a href="">回复</a></span>
+                  		</div>           
+                        <div class="be">
+                        	<p>去去去</p><br>
+						</div>						
+                	</td>
+            	</tr>
+        	</tbody>
+        </table>
+        <table cellspacing="0" cellpadding="0" class="book bookmod2"  id="blt833">
+            <tbody>
+            	<tr>
+                	<td class="bookl">
+                    	<div class="bookl_t"></div>
+                    	<div class="booklimg">
+                        	<img src="__STATIC__/img/faces7.gif" alt="去去去" title="去去去">
+                        	<span>去去去</span>
+                        	<b>女</b>
+                    	</div>
+                	</td>
+               		 <td class="bookr">
+                    	<div class="bb">
+                       	 	<span class="bb06"><a title="去去去"  target="blank">QQ</a></span> 
+                        	<span class="bb01">727519010</span>  
+                    	</div>
+                   		 <div class="bt">
+                        <span class="bt01"></span> 
+                        <span class="bt02">发表于：2016/8/6 8:12:28</span> 
+                        <span class="bt03"><a href="">回复</a></span>
+                  		</div>           
+                        <div class="be">
+                        	<p>去去去</p><br>
+						</div>						
+                	</td>
+            	</tr>
+        	</tbody>
+        </table>
+	<div class="int">
+	<form id="f1" method="post" action="{:U(BBS/bbs)}">
+	标题 :<input type="text" name="title" style="width:589px;height:30px;margin-bottom: 5px;  ">
+		<textarea id=editor name="content" style="width:594px;height:200px;"></textarea>
+	
+<!-- 	<script id="editor" type="text/plain" style="width:594px;height:200px;"></script>
+ --><div class="fl">
+	
+
+	
+	<div class="fj">
+		<a href="javascript:void(0)" onclick="return false;" class="btn-post " >
+		<!-- <i class="icon-loading">
+		</i> -->
+		<span class="t" onclick="goadd()">发表</span>
+		</a>
+	</div>
+	</form>
+</div>
+</div>
+</div>
+	<div class="shipin">
+	<div class="jingcai">
+	<div class="jing"><a href="">精彩视频</a></div>
+	<div class="gengduo"><a href="">跟多精彩视频</a></div>
+	</div>
+			<ul>
+
+			<foreach name="video" item="v">
+			<li>
+			<a href="{:U('BBS/player?id='.$v['id'])}">
+			<div class="tu"><img src="{$v.thumb}" alt=""></div>
+			<div class="cba">{$v.title}</div>
+			</a>
+			</li>
+			</foreach>
+
+
+
+			
+		</ul>
+
+	</div>
+	<div class="tiezi">
+	<!-- <div class="xiang">相关帖子</div> -->
+	<h4>相关帖子</h4>
+		<ul>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+			<li>《网页设计创意和独特产生的19个电子》评论</li>
+		</ul>
+	</div>
+	</div>
+		<footer>
+		<div class="info">
+		<div class="info1">
+		<div><a href="">关于多多购</a></div>
+		<div><a href="">多多购手机端</a></div>
+		<div><a href="">联系我们</a></div>
+		<div><a href="">友情链接</a></div>
+		</div>	
+		<div class="info-a-box">	
+			<ul class="info-a">
+				<li>
+				<ol class="info-b">
+					<li><a href="">新手指南</a></li>
+					<li><a href="">优惠券相关说明</a></li>
+					<li><a href="">代购流程</a></li>
+					<li><a href="">会员与积分</a></li>
+					<li><a href="">代购费用</a></li>
+					<li><a href="">代购订单状态</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">付款方式</a></li>
+					<li><a href="">信用卡付款</a></li>
+					<li><a href="">银行卡付款</a></li>
+					<li><a href="">支付宝付款</a></li>
+					<li><a href="">微信支付</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">配送相关</a></li>
+					<li><a href="">运送区域、方式与运费</a></li>
+					<li><a href="">最新大货物物流状态</a></li>
+					<li><a href="">海关及税项</a></li>
+					<li><a href="">商品保管期限</a></li>
+					<li><a href="">包裹跟踪</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">售后服务/退款</a></li>
+					<li><a href="">无理由退货</a></li>
+					<li><a href="">退换货政策</a></li>
+					<li><a href="">我要投诉</a></li>
+					<li><a href="">退款方式</a></li>
+				</ol>
+				</li>
+			</ul>
+			<div class="phone">
+				<p><img src="__STATIC__/img/phone.jpg" alt="" >024-00010002</p>
+				<div class="time">周一至周日，早8:00至晚18:00</div>
+				<div class="wei"><img src="__STATIC__/img/wei.jpg" alt=""></div>
+			</div>
+	</div>
+			<div class="permit">
+			    经营许可：*ICP12001605-4  @2017多多购
+			</div>
+		</div>
+
+	</footer>
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/swiper.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/vip.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/jquery.lightbox.min.js"></script>
+
+	 <script type="text/javascript">
+    jQuery(document).ready(function($){
+      $('.lightbox').lightbox();
+    });
+    $(function(){
+	$(".hf").click(function(){	
+		var focus = $(this).parents().find("#focus");
+		if(focus.css("display")=="none")
+		{
+		   focus.show();this.innerHTML = "收起";
+		}else
+		{
+		  focus.hide(); this.innerHTML = "回复";
+		}
+    });
+    $(".hf1").click(function(){	
+		var focus1 = $(this).parents().find("#focus1");
+		if(focus1.css("display")=="none")
+		{
+		   focus1.show();this.innerHTML = "收起";
+		}else
+		{
+		  focus1.hide(); this.innerHTML = "回复";
+		}
+    });
+	$("form").submit(function(){
+	   var textarea = $(this).find("#textarea");
+	   if(textarea.val()==""||textarea.val()=="请输入内容")
+	   {
+	      textarea.blur();
+	      return false;
+	   }
+	});
+});
+    $(document).ready(function(e) {
+    ImgIputHandler.Init();
+});
+var ImgIputHandler={
+	facePath:[
+	    {faceName:"微笑",facePath:"0_微笑.gif"},
+		{faceName:"撇嘴",facePath:"1_撇嘴.gif"},
+		{faceName:"色",facePath:"2_色.gif"},
+		{faceName:"发呆",facePath:"3_发呆.gif"},
+		{faceName:"得意",facePath:"4_得意.gif"},
+		{faceName:"流泪",facePath:"5_流泪.gif"},
+		{faceName:"害羞",facePath:"6_害羞.gif"},
+		{faceName:"闭嘴",facePath:"7_闭嘴.gif"},
+		{faceName:"大哭",facePath:"9_大哭.gif"},
+		{faceName:"尴尬",facePath:"10_尴尬.gif"},
+		{faceName:"发怒",facePath:"11_发怒.gif"},
+		{faceName:"调皮",facePath:"12_调皮.gif"},
+		{faceName:"龇牙",facePath:"13_龇牙.gif"},
+		{faceName:"惊讶",facePath:"14_惊讶.gif"},
+		{faceName:"难过",facePath:"15_难过.gif"},
+		{faceName:"酷",facePath:"16_酷.gif"},
+		{faceName:"冷汗",facePath:"17_冷汗.gif"},
+		{faceName:"抓狂",facePath:"18_抓狂.gif"},
+		{faceName:"吐",facePath:"19_吐.gif"},
+		{faceName:"偷笑",facePath:"20_偷笑.gif"},
+	    {faceName:"可爱",facePath:"21_可爱.gif"},
+		{faceName:"白眼",facePath:"22_白眼.gif"},
+		{faceName:"傲慢",facePath:"23_傲慢.gif"},
+		{faceName:"饥饿",facePath:"24_饥饿.gif"},
+		{faceName:"困",facePath:"25_困.gif"},
+		{faceName:"惊恐",facePath:"26_惊恐.gif"},
+		{faceName:"流汗",facePath:"27_流汗.gif"},
+		{faceName:"憨笑",facePath:"28_憨笑.gif"},
+		{faceName:"大兵",facePath:"29_大兵.gif"},
+		{faceName:"奋斗",facePath:"30_奋斗.gif"},
+		{faceName:"咒骂",facePath:"31_咒骂.gif"},
+		{faceName:"疑问",facePath:"32_疑问.gif"},
+		{faceName:"嘘",facePath:"33_嘘.gif"},
+		{faceName:"晕",facePath:"34_晕.gif"},
+		{faceName:"折磨",facePath:"35_折磨.gif"},
+		{faceName:"衰",facePath:"36_衰.gif"},
+		{faceName:"骷髅",facePath:"37_骷髅.gif"},
+		{faceName:"敲打",facePath:"38_敲打.gif"},
+		{faceName:"再见",facePath:"39_再见.gif"},
+		{faceName:"擦汗",facePath:"40_擦汗.gif"},
+		
+		{faceName:"抠鼻",facePath:"41_抠鼻.gif"},
+		{faceName:"鼓掌",facePath:"42_鼓掌.gif"},
+		{faceName:"糗大了",facePath:"43_糗大了.gif"},
+		{faceName:"坏笑",facePath:"44_坏笑.gif"},
+		{faceName:"左哼哼",facePath:"45_左哼哼.gif"},
+		{faceName:"右哼哼",facePath:"46_右哼哼.gif"},
+		{faceName:"哈欠",facePath:"47_哈欠.gif"},
+		{faceName:"鄙视",facePath:"48_鄙视.gif"},
+		{faceName:"委屈",facePath:"49_委屈.gif"},
+		{faceName:"快哭了",facePath:"50_快哭了.gif"},
+		{faceName:"阴险",facePath:"51_阴险.gif"},
+		{faceName:"亲亲",facePath:"52_亲亲.gif"},
+		{faceName:"吓",facePath:"53_吓.gif"},
+		{faceName:"可怜",facePath:"54_可怜.gif"},
+		{faceName:"菜刀",facePath:"55_菜刀.gif"},
+		{faceName:"西瓜",facePath:"56_西瓜.gif"},
+		{faceName:"啤酒",facePath:"57_啤酒.gif"},
+		{faceName:"篮球",facePath:"58_篮球.gif"},
+		{faceName:"乒乓",facePath:"59_乒乓.gif"},
+		{faceName:"拥抱",facePath:"78_拥抱.gif"},
+		{faceName:"握手",facePath:"81_握手.gif"},
+		{faceName:"得意地笑",facePath:"得意地笑.gif"},
+		{faceName:"听音乐",facePath:"听音乐.gif"}
+	]
+	,
+	Init:function(){
+		var isShowImg=false;
+		$(".Input_text").focusout(function(){
+			$(this).parent().css("border-color", "#cccccc");
+            $(this).parent().css("box-shadow", "none");
+            $(this).parent().css("-moz-box-shadow", "none");
+            $(this).parent().css("-webkit-box-shadow", "none");
+		});
+		$(".Input_text").focus(function(){
+		$(this).parent().css("border-color", "rgba(19,105,172,.75)");
+        $(this).parent().css("box-shadow", "0 0 3px rgba(19,105,192,.5)");
+        $(this).parent().css("-moz-box-shadow", "0 0 3px rgba(241,39,232,.5)");
+        $(this).parent().css("-webkit-box-shadow", "0 0 3px rgba(19,105,252,3)");
+		});
+		$(".imgBtn").click(function(){
+			if(isShowImg==false){
+				isShowImg=true;
+			    $(this).parent().prev().animate({marginTop:"-125px"},300);
+			      $(".faceDiv").css("display","block");
+				if($(".faceDiv").children().length==0){
+					for(var i=0;i<ImgIputHandler.facePath.length;i++){
+						$(".faceDiv").append("<img title=\""+ImgIputHandler.facePath[i].faceName+"\" src=\"__STATIC__/img/"+"face/"+ImgIputHandler.facePath[i].facePath+"\" />");
+					}
+					$(".faceDiv>img").click(function(){
+						 
+				 		isShowImg=false;
+			            $(this).parent().animate({marginTop:"0px"},300);
+			            $(".faceDiv").css("display","none");
+						ImgIputHandler.insertAtCursor($(".Input_text")[0],"["+$(this).attr("title")+"]");
+					});
+				}
+			}else{
+				isShowImg=false;
+			    $(this).parent().prev().animate({marginTop:"0px"},300);
+			    $(".faceDiv").css("display","none");
+
+			}
+		});
+		$(".postBtn").click(function(){
+			alert($(".Input_text").val());
+		});
+	},
+	insertAtCursor:function(myField, myValue) {
+    if (document.selection) {
+        myField.focus();
+        sel = document.selection.createRange();
+        sel.text = myValue;
+        sel.select();
+    } else if (myField.selectionStart || myField.selectionStart == "0") {
+        var startPos = myField.selectionStart;
+        var endPos = myField.selectionEnd;
+        var restoreTop = myField.scrollTop;
+        myField.value = myField.value.substring(0, startPos) + myValue + myField.value.substring(endPos, myField.value.length);
+        if (restoreTop > 0) {
+            myField.scrollTop = restoreTop;
+        }
+        myField.focus();
+        myField.selectionStart = startPos + myValue.length;
+        myField.selectionEnd = startPos + myValue.length;
+    } else {
+        myField.value += myValue;
+        myField.focus();
+    }
+}
+}
+  </script>
+
+<script type="text/javascript">
+function goadd()
+{
+	$.post("{:U('BBS/bbs')}",$("#f1").serialize(),function(data){
+		if(data==1)
+		{
+			alert("发布成功");
+			history.go(0);
+		}
+		else
+		{
+			alert(data);
+		}
+	})
+	//$("#f1").submit();
+}
+
+</script>
+  
+
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+
+
+    function isFocus(e){
+        alert(UE.getEditor('editor').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function insertHtml() {
+        var value = prompt('插入html代码', '');
+        UE.getEditor('editor').execCommand('insertHtml', value)
+    }
+    function createEditor() {
+        enableBtn();
+        UE.getEditor('editor');
+    }
+    function getAllHtml() {
+        alert(UE.getEditor('editor').getAllHtml())
+    }
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+    function getPlainTxt() {
+        var arr = [];
+        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getPlainTxt());
+        alert(arr.join('\n'))
+    }
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+    function setDisabled() {
+        UE.getEditor('editor').setDisabled('fullscreen');
+        disableBtn("enable");
+    }
+
+    function setEnabled() {
+        UE.getEditor('editor').setEnabled();
+        enableBtn();
+    }
+
+    function getText() {
+        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+        var range = UE.getEditor('editor').selection.getRange();
+        range.select();
+        var txt = UE.getEditor('editor').selection.getText();
+        alert(txt)
+    }
+
+    function getContentTxt() {
+        var arr = [];
+        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+        arr.push("编辑器的纯文本内容为：");
+        arr.push(UE.getEditor('editor').getContentTxt());
+        alert(arr.join("\n"));
+    }
+    function hasContent() {
+        var arr = [];
+        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+        arr.push("判断结果为：");
+        arr.push(UE.getEditor('editor').hasContents());
+        alert(arr.join("\n"));
+    }
+    function setFocus() {
+        UE.getEditor('editor').focus();
+    }
+    function deleteEditor() {
+        disableBtn();
+        UE.getEditor('editor').destroy();
+    }
+    function disableBtn(str) {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            if (btn.id == str) {
+                UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+            } else {
+                btn.setAttribute("disabled", "true");
+            }
+        }
+    }
+    function enableBtn() {
+        var div = document.getElementById('btns');
+        var btns = UE.dom.domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            UE.dom.domUtils.removeAttributes(btn, ["disabled"]);
+        }
+    }
+
+    function getLocalData () {
+        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+    }
+
+    function clearLocalData () {
+        UE.getEditor('editor').execCommand( "clearlocaldata" );
+        alert("已清空草稿箱")
+    }
+</script>
+
+
+</body>
+
+
+
+</html>

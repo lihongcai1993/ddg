@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>首页-{$tpshop_config['shop_info_store_title']}</title>
+	
+</head>
+<link rel="stylesheet" href="__STATIC__/css/style.css">
+<link rel="stylesheet" href="__STATIC__/css/swiper.min.css">
+<body>
+ <div id="menu">
+  <ul>
+   <li>1F<span>美容护肤</span></li>
+   <li>2F<span>彩妆用品</span></li>
+   <li>3F<span>美发护发</span></li>
+   <li>4F<span>男士护肤</span></li>
+  </ul>
+ </div>
+	<Include file="Public/header" />
+	<!-- 导航 -->
+	<ul class="nav" id="nav">
+		<li class="cur nav-a"><a href="{:U('Index/index')}">首页</a></li>
+		<li class="nav-a"><a href="{:U('Goods/goodslist')}">多多购物</a></li>
+		<li class="nav-a"><a href="{:U('BBS/bbs')}">我的社区</a></li>
+		<li class="nav-a"><a href="{:U('GroupBuy/index')}">活动优惠</a></li>
+		<li class="nav-a"><a href="{:U('Vip/vip')}">会员中心</a></li>
+	</ul>
+		<!-- banner图 -->
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+      <adv  pid = "1" limit="4" item="v">     
+            <div class="swiper-slide"><img src="{$v['ad_code']}" alt="" ></div>
+        </adv>  
+           <!--  <div class="swiper-slide"><img src="__STATIC__/img/ban1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="__STATIC__/img/ban2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="__STATIC__/img/ban3.jpg" alt=""></div> -->
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+	<!-- 产品 -->
+	<div class="pro">
+		<!-- <div class="pro-n">
+			<ul id="logoo">
+				<li class="cur1"><a href="">美容护肤</a></li>
+				<li><a href="">彩妆用品</a></li>
+				<li><a href="">美发护发</a></li>
+				<li><a href="">男士护肤</a></li>
+			</ul>
+		</div> -->
+		<div class="list">
+		<!-- 美容护肤 -->
+		<div class="moban " id="louti1">
+			<div class="one">
+				<div class="second">美容护肤</div>
+				<ol >
+					<li><a href="">面部护理</a></li>
+					<li><a href="">眼部护理</a></li>
+					<li><a href="">手部护理</a></li>
+					<li><a href="">身体护理</a></li>
+					<li><a href="">更多</a></li>
+				</ol>
+			</div>
+			<ul>
+			<li class="special">
+				<a href=""><img src="__STATIC__/img/skin1.jpg" alt="" style="width: 100%;"></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt="" >
+				<p>温碧泉化妆品面部护理套装透芯润补水保湿爽肤水乳液</p>
+				<span>￥257.00 &nbsp (4.8折)<del>￥537.00</del></span>
+				</a>
+			</li>
+			<li>
+			<a href="">
+			<img src="__STATIC__/img/skin3.jpg" alt="">
+			<p>八杯水套装正品补水保湿美白控油护肤面部护理女8杯水化妆品</p>
+				<span>￥28.00 </span></a></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt="">
+			<p>温碧泉化妆品面部护理套装透芯润补水保湿爽肤水乳液护肤品</p>
+				<span>￥257.00 &nbsp (4.8折)<del>￥537.00</del></span></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>Curel/珂润护肤品套装保湿水乳女冬面部护理深层补水花王正品</p>
+				<span>￥284.00 &nbsp (9.0折)<del>￥316.00</del></span></a></li>
+			</ul>
+		</div>
+		<!-- 彩妆用品 -->
+		<div class="moban moban1" id="louti2">
+			<div class="one">
+				<div class="second">彩妆用品</div>
+				<ol >
+					<li><a href="">眼部彩妆</a></li>
+					<li><a href="">唇部彩妆</a></li>
+					<li><a href="">化妆工具</a></li>
+					<li><a href="">彩妆套装</a></li>
+					<li><a href="">更多</a></li>
+				</ol>
+			</div>
+			<ul>
+			<li class="special">
+				<a href=""><img src="__STATIC__/img/skin1.jpg" alt="" style="width: 100%"></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>巧迪尚惠唇彩唇蜜持久保湿滋润不脱色防水唇膏咬唇妆口红液</p>
+				<span>￥19.90 &nbsp (7.1折)<del>￥28.00</del></span></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>巧迪尚惠唇彩保湿滋润不脱色防水持久唇膏口红液唇蜜学生唇液</p>
+				<span>￥19.90 &nbsp (7.1折)<del>￥28.00</del></span></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt="">
+			<p>染唇液正品咬唇妆唇釉防水持久不脱色唇彩唇蜜水果香味口红水</p>
+			<span>￥9.90 &nbsp (5.5折)<del>￥18.00</del></span></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>丝绒哑光雾面唇釉染唇液口红保湿持久不脱色咬唇妆唇彩唇蜜</p>
+				<span>￥19.80 &nbsp (3.4折)<del>￥58.00</del></span></a></li>
+			</ul>
+		</div>
+		<!-- 美发护发 -->
+		<div class="moban moban1 " id="louti3">
+			<div class="one">
+				<div class="second">美发护发</div>
+				<ol >
+					<li><a href="">洗发水</a></li>
+					<li><a href="">护发素</a></li>
+					<li><a href="">发膜/倒模</a></li>
+					<li><a href="">染发产品</a></li>
+					<li><a href="">更多</a></li>
+				</ol>
+			</div>
+			<ul>
+			<li class="special">
+				<a href=""><img src="__STATIC__/img/skin1.jpg" alt="" style="width: 100%;"></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>韩国进口正品RYOE/吕红吕洗发水套装无硅油男女防脱发洗发膏</p>
+			<span>￥45.60 &nbsp (9.5折)<del>￥48.00</del></span></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>送起泡网法国FURTERER馥绿德雅防脱洗发水250ml控油不含硅</p>
+			<span>￥92.00 &nbsp (8.3折)<del>￥111.00</del></span></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>隆力奇去屑洗发水去头屑止痒控油男女正品洗发露持久留香</p>
+			<span>￥19.90 &nbsp (1.1折)<del>￥178.00</del></span></a></li>
+			<li>
+			<a href="">
+			<img src="__STATIC__/img/skin2.jpg" alt="">
+			<p>自然使者香水洗发水沐浴露套装2kg持久留香正品洗沐家庭装</p>
+			<span>￥39.90 &nbsp (2.9折)<del>￥138.00</del>
+			</span>
+			</a></li>
+			</ul>
+		</div>
+		<!-- 男士护肤 -->
+		<div class="moban moban1 " id="louti4">
+			<div class="one">
+				<div class="second">男士护肤</div>
+				<ol >
+					<li><a href="">男士洁面</a></li>
+					<li><a href="">男士护肤</a></li>
+					<li><a href="">男士面膜</a></li>
+					<li><a href="">男士祛痘</a></li>
+					<li><a href="">更多</a></li>
+				</ol>
+			</div>
+			<ul>
+			<li class="special">
+				<a href=""><img src="__STATIC__/img/skin1.jpg" alt="" style="width: 100%;"></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>兰可欣男士护肤套装洗面奶爽肤水面霜面膜控油祛痘去黑头化妆品</p>
+			<span>￥29.00 &nbsp (1.0折)<del>￥299.00</del>
+			</span>
+			</a></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>相宜本草男士溶液面霜保湿霜补水润肤护肤霜擦脸油滋润护脸化妆品</p>
+			<span>￥39.90 &nbsp (2.9折)<del>￥299.00</del>
+			</span>
+			</a></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>罗杰夫男士护肤品套装男洗面奶面膜保湿补水化妆品爽肤水乳液</p>
+			<span>￥59.00 &nbsp (2.8折)<del>￥212.00</del>
+			</span>
+			</a></a></li>
+			<li><a href=""><img src="__STATIC__/img/skin2.jpg" alt=""><p>男士面霜秋冬护肤霜乳液补水控油保湿霜擦脸油润肤露醒肤露化妆品</p>
+			<span>￥9.99 &nbsp (1.7折)<del>￥50.00</del>
+			</span>
+			</a></a></li>
+			</ul>
+		</div>
+			
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="info">
+		<div class="info1">
+		<div><a href="">关于多多购</a></div>
+		<div><a href="">多多购手机端</a></div>
+		<div><a href="">联系我们</a></div>
+		<div><a href="">友情链接</a></div>
+		</div>	
+		<div class="info-a-box">	
+			<ul class="info-a">
+				<li>
+				<ol class="info-b">
+					<li><a href="">新手指南</a></li>
+					<li><a href="">优惠券相关说明</a></li>
+					<li><a href="">代购流程</a></li>
+					<li><a href="">会员与积分</a></li>
+					<li><a href="">代购费用</a></li>
+					<li><a href="">代购订单状态</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">付款方式</a></li>
+					<li><a href="">信用卡付款</a></li>
+					<li><a href="">银行卡付款</a></li>
+					<li><a href="">支付宝付款</a></li>
+					<li><a href="">微信支付</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">配送相关</a></li>
+					<li><a href="">运送区域、方式与运费</a></li>
+					<li><a href="">最新大货物物流状态</a></li>
+					<li><a href="">海关及税项</a></li>
+					<li><a href="">商品保管期限</a></li>
+					<li><a href="">包裹跟踪</a></li>
+				</ol>
+				</li>
+				<li>
+				<ol>
+					<li><a href="">售后服务/退款</a></li>
+					<li><a href="">无理由退货</a></li>
+					<li><a href="">退换货政策</a></li>
+					<li><a href="">我要投诉</a></li>
+					<li><a href="">退款方式</a></li>
+				</ol>
+				</li>
+			</ul>
+			<div class="phone">
+				<p><img src="__STATIC__/img/phone.jpg" alt="" >024-00010002</p>
+				<div class="time">周一至周日，早8:00至晚18:00</div>
+				<div class="wei"><img src="__STATIC__/img/wei.jpg" alt=""></div>
+			</div>
+	</div>
+			<div class="permit">
+			    经营许可：*ICP12001605-4  @2017多多购
+			</div>
+		</div>
+
+	</footer>
+	<script type="text/javascript" src="__STATIC__/js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/swiper.min.js"></script>
+	<script type="text/javascript" src="__STATIC__/js/index.js"></script>
+	<script>
+	$(function(){	
+	var _index=0;
+  	$("#menu ul li").click(function(){
+   	$(this).find("#menu ul li span").addClass("active").parent().siblings().find("#menu ul li span").removeClass("active");
+  	 _index=$(this).index()+1;
+  	  var _top=$("#louti"+_index).offset().top;
+  	  $("body,html").animate({scrollTop:_top},380);
+    });
+     	var nav=$("#menu"); //得到导航对象
+  		var win=$(window); //得到窗口对象
+  		var sc=$(document);//得到document文档对象。
+  		  win.scroll(function(){
+ 
+   if(sc.scrollTop()>=600){
+   $("#menu").show(); 
+   // 获取滚动元素对应的索引!!!重难点
+   var index=Math.floor(sc.scrollTop()/450);
+ 
+   $("#menu ul li span").eq(index-1).addClass("active").parent().siblings().find("span").removeClass("active");
+   }else{
+   $("#menu").hide();
+   }
+  });
+   });
+	</script>
+
+</body>
+</html>

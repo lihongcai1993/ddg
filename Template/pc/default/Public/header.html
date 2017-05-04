@@ -1,0 +1,62 @@
+<header>
+	<div class="top">
+		<div class="top-bar">
+			<div class="logo"><img src="__STATIC__/img/logo.png" alt="" style="width: 100%"></div>
+			<div class="title"><img src="__STATIC__/img/title.png" alt="" style="width: 100%">	</div>
+		</div>	
+	</div>
+	<div class="top-nav">
+	<div class="top-cen">
+	    <div class="en">
+	    <if condition="$_SESSION['user']['user_id']">
+	    <p class="entry"><a href="{:U('User/index')}">{$Think.session.user.username}</a></p>
+	    <p class="enroll"><a href="{:U('User/logout')}">退出登录</a></p>
+	    <else/>
+		<p class="entry"><a href="{:U('User/login')}">请登录</a></p>
+		<p class="enroll"><a href="{:U('User/reg')}">免费注册</a></p>
+		</if>
+		</div>
+		<ul>
+			<li>
+				<span>我的订单</span>
+				<img src="__STATIC__/img/arrow.png" alt="">	
+				<div class="wait">
+				<p><a href="">待付款</a></p>	
+				<p><a href="">已付款</a></p>	
+				</div>
+			
+			</li>
+			<li><span>我的购物</span><img src="__STATIC__/img/arrow.png" alt="">
+			<div class="wait">
+				<p><a href="">历史交易记录</a></p>	
+				<p><a href="">历史浏览记录</a></p>	
+				</div>
+			</li>
+			<li>帮助中心</a></li>
+			<li><img src="__STATIC__/img/phone1.png" alt="" class="car"><span>购物车</span></li>
+			<li><img src="__STATIC__/img/phone.png" alt="" class="telephone"><span>手机多多购</span>
+				<div class="wait wait1">
+				<img src="__STATIC__/img/erwei.jpg" alt="" class="erwei">
+				</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+
+	<div class="search">
+		<div class="search-a">
+		<div class="logo-duoduo">
+			<img src="__STATIC__/img/logo1.png" alt="" >
+			<p>多多购</p>
+		</div>
+	
+		<input type="text" class="search-bar" placeholder="请输入商品名称搜索">
+		<div class="search-but">
+		<a href="">
+			<div class="ex-search"></div>
+			<span>搜索</span>
+			<div class="ex-search-1"></div>
+			</a>
+			</div>
+		</div>
+	</header>

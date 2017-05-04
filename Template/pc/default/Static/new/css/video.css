@@ -1,0 +1,9 @@
+.video {
+	width: 100%;
+}
+.video_cen {
+	width: 60%;
+	margin: 0 auto;
+	height: 600px;
+	border:1px solid red;
+}

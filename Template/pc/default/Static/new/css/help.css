@@ -1,0 +1,70 @@
+.help {
+	width: 100%;
+	border:1px solid red;
+	overflow: hidden;
+}
+.help_auto {
+	width: 60%;
+	margin: 0 auto;
+	border:1px solid green;
+}
+.help_auto div {
+	float: left;
+}
+.help_auto_left {
+	width: 20%;
+	background-color: #313030;
+ 	padding-bottom: 20px;
+ 	cursor: pointer;
+}
+.help_auto_left ul {
+	width: 100%;
+}
+.help_auto_left ul li {
+	width: 80%;
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom:1px solid #fff;
+	padding:10px 0;
+	
+}
+.help_auto_left ul li a {
+	color: #fff;
+}
+.help_auto_right {
+	width: 78%;
+	border:1px solid pink;
+
+}
+.help_auto_right .help_auto_right_con{
+	width: 90%;
+	margin: 0 auto;
+	float: none;
+
+}
+.help_auto_right .help_auto_right_con ul {
+	width: 100%;
+}
+.help_auto_right .help_auto_right_con ul li {
+	width: 100%;
+	list-style: none;
+	border: 1px solid #000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+.help_auto_right .help_auto_right_con ul li div {
+	float: none;
+	font-size: 20px;
+	border-bottom: 1px solid #000;
+	width: 100%;
+}
+.help_auto_right .help_auto_right_con ul li div span {
+	margin-left: 20px;
+}
+.help_auto_right .help_auto_right_con ul li p {
+	margin-left: 20px;
+	padding: 5px 0;
+}

@@ -1,0 +1,58 @@
+
+.vip {
+	width: 60%;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	min-width: 700px;
+}
+h3 {
+	text-align: center;
+	 font-size: 28px;
+    padding: 5px 0;
+}
+.vip-sale {
+	/*border: 1px solid blue;*/
+	width: 90%;
+	/*height: 1000px;*/
+	/*text-align: center;*/
+	margin: 0 auto;
+}
+.vip-sale ul {
+	width: 100%;
+	overflow: hidden;
+	   padding-bottom: 30px;
+}
+.vip-sale ul li {
+	list-style: none;
+	float: left;
+	width: 20%;
+	margin-left: 4%;
+	margin-top: 10px;
+	border:1px solid #fff;
+}
+.vip-sale ul li:hover {
+	border:1px solid red;
+}
+.vip-sale ul li img {
+	width: 100%;
+}
+.only {
+	font-size: 20px;
+	padding-left: 4%;
+	padding-top: 10px;
+
+}
+.vip-sale ul li del {
+	color: #999;
+}
+.vip-sale ul li p {
+	color: red;
+}
+.vip-sale ul li a{
+	font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+	.only {
+		font-size: 18px;
+	}
+}
